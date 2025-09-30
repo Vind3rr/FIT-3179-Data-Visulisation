@@ -1,0 +1,225 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 900,
+  "height": 600,
+
+  "params": [
+    {
+      "name": "wave",
+      "value": "Full Cohort",
+      "bind": {
+        "input": "select",
+        "name": "Select Wave: ",
+        "options": ["Full Cohort","Pre-Delta","Delta","Omicron"]
+      }
+    },
+    {
+      "name": "state",
+      "value": "All States",
+      "bind": {
+        "input": "select",
+        "name": "Select State: ",
+        "options": [
+          "All States",
+          "New South Wales","Victoria","Queensland","South Australia",
+          "Tasmania","Australian Capital Territory","Northern Territory","Western Australia"
+        ]
+      }
+    }
+  ],
+
+  "projection": {"type": "equirectangular", "center": [135, -25], "scale": 900},
+
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/ne_10m_admin_1_states_provinces.json",
+        "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
+      },
+      "mark": {"type": "geoshape"},
+      "encoding": {"color": {"value": "#cce0ff"}}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/ne_10m_admin_1_states_provinces.json",
+        "format": {"type": "topojson", "mesh": "ne_10m_admin_1_states_provinces"}
+      },
+      "mark": {"type": "geoshape", "fill": "transparent", "stroke": "#1f2937", "strokeWidth": 1.0}
+    },
+
+    {
+      "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/australian_states_coords.csv"},
+      "transform": [
+        {
+          "lookup": "name",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/covid_by_state_wave.csv"},
+            "key": "State/territory of usual residence",
+            "fields": [
+              "Full cohort - Number",
+              "Full cohort - % with COVID-19",
+              "Full cohort - % resident population",
+              "pre-Delta - Number",
+              "pre-Delta - % with COVID-19",
+              "pre-Delta - % resident population",
+              "Delta - Number",
+              "Delta - % with COVID-19",
+              "Delta - % resident population",
+              "Omicron - Number",
+              "Omicron - % with COVID-19",
+              "Omicron - % resident population"
+            ]
+          }
+        },
+        {"calculate": "wave", "as": "selected_wave"},
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - Number'] : wave == 'Pre-Delta' ? datum['pre-Delta - Number'] : wave == 'Delta' ? datum['Delta - Number'] : datum['Omicron - Number']",
+          "as": "sel_number"
+        },
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - % with COVID-19'] : wave == 'Pre-Delta' ? datum['pre-Delta - % with COVID-19'] : wave == 'Delta' ? datum['Delta - % with COVID-19'] : datum['Omicron - % with COVID-19']",
+          "as": "sel_pct_covid"
+        },
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - % resident population'] : wave == 'Pre-Delta' ? datum['pre-Delta - % resident population'] : wave == 'Delta' ? datum['Delta - % resident population'] : datum['Omicron - % resident population']",
+          "as": "sel_pct_pop"
+        }
+      ],
+      "mark": {"type": "circle", "size": 90, "color": "black", "stroke": "white", "strokeWidth": 0.8},
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "opacity": {
+          "condition": {"test": "state == 'All States' || datum.name == state", "value": 1},
+          "value": 0.35
+        },
+        "tooltip": [
+          {"field": "name", "title": "State/Territory"},
+          {"field": "selected_wave", "title": "Wave"},
+          {"field": "sel_number", "title": "Number", "format": ","},
+          {"field": "sel_pct_covid", "title": "% with COVID-19", "format": ".2f"},
+          {"field": "sel_pct_pop", "title": "% resident population", "format": ".2f"}
+        ]
+      }
+    },
+
+    {
+      "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/australian_states_coords.csv"},
+      "mark": {
+        "type": "text",
+        "font": "system-ui, Segoe UI, Roboto, Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -1,
+        "fill": "#ffffff",
+        "stroke": "#ffffff",
+        "strokeWidth": 3.5,
+        "strokeJoin": "round",
+        "strokeMiterLimit": 2,
+        "opacity": 0.95
+      },
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "name"},
+        "opacity": {
+          "condition": {"test": "state == 'All States' || datum.name == state", "value": 1},
+          "value": 0.45
+        }
+      }
+    },
+
+    {
+      "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/australian_states_coords.csv"},
+      "transform": [
+        {
+          "lookup": "name",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/covid_by_state_wave.csv"},
+            "key": "State/territory of usual residence",
+            "fields": [
+              "Full cohort - Number",
+              "Full cohort - % with COVID-19",
+              "Full cohort - % resident population",
+              "pre-Delta - Number",
+              "pre-Delta - % with COVID-19",
+              "pre-Delta - % resident population",
+              "Delta - Number",
+              "Delta - % with COVID-19",
+              "Delta - % resident population",
+              "Omicron - Number",
+              "Omicron - % with COVID-19",
+              "Omicron - % resident population"
+            ]
+          }
+        },
+        {"calculate": "wave", "as": "selected_wave"},
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - Number'] : wave == 'Pre-Delta' ? datum['pre-Delta - Number'] : wave == 'Delta' ? datum['Delta - Number'] : datum['Omicron - Number']",
+          "as": "sel_number"
+        },
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - % with COVID-19'] : wave == 'Pre-Delta' ? datum['pre-Delta - % with COVID-19'] : wave == 'Delta' ? datum['Delta - % with COVID-19'] : datum['Omicron - % with COVID-19']",
+          "as": "sel_pct_covid"
+        },
+        {
+          "calculate": "wave == 'Full Cohort' ? datum['Full cohort - % resident population'] : wave == 'Pre-Delta' ? datum['pre-Delta - % resident population'] : wave == 'Delta' ? datum['Delta - % resident population'] : datum['Omicron - % resident population']",
+          "as": "sel_pct_pop"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "font": "system-ui, Segoe UI, Roboto, Arial, sans-serif",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -1,
+        "fill": "#111111"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude"},
+        "latitude": {"field": "latitude"},
+        "text": {"field": "name"},
+        "opacity": {
+          "condition": {"test": "state == 'All States' || datum.name == state", "value": 1},
+          "value": 0.9
+        },
+        "tooltip": [
+          {"field": "name", "title": "State/Territory"},
+          {"field": "selected_wave", "title": "Wave"},
+          {"field": "sel_number", "title": "Number", "format": ","},
+          {"field": "sel_pct_covid", "title": "% with COVID-19", "format": ".2f"},
+          {"field": "sel_pct_pop", "title": "% resident population", "format": ".2f"}
+        ]
+      }
+    },
+
+    {
+      "data": {"values": [{"lon": 135, "lat": -25, "label": "A U S T R A L I A"}]},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "font": "Georgia",
+        "fontWeight": "700",
+        "fontSize": 34,
+        "fill": "#111827",
+        "opacity": 0.45,
+        "stroke": "white",
+        "strokeWidth": 2,
+        "strokeOpacity": 0.85
+      },
+      "encoding": {
+        "longitude": {"field": "lon"},
+        "latitude": {"field": "lat"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}
