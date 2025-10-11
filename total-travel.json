@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Monthly total overseas arrivals and departures (ABS OAD).",
+  "width": 900,
+  "height": 420,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total_travel_clean.csv",
+    "format": { "type": "csv" }
+  },
+
+  "transform": [
+    {
+      "fold": ["Arrivals (M)", "Departures (M)"],
+      "as": ["Type", "Millions"]
+    },
+    { "filter": "isValid(datum.Millions) && isValid(datum.Date)" }
+  ],
+
+  "mark": { "type": "line", "point": true },
+
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": "Month",
+      "axis": { "format": "%b %Y", "labelAngle": -45 }
+    },
+    "y": {
+      "field": "Millions",
+      "type": "quantitative",
+      "title": "People (millions)"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "title": "Flow"
+    },
+    "tooltip": [
+      { "field": "Date", "type": "temporal", "title": "Month", "format": "%b %Y" },
+      { "field": "Type", "type": "nominal" },
+      { "field": "Millions", "type": "quantitative", "format": ".2f", "title": "Millions" }
+    ]
+  }
+}
