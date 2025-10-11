@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Visitor Origins: Top Countries to Australia",
+  "width": 750,
+  "height": 450,
+  "projection": {"type": "equalEarth"},
+
+  "params": [
+    {
+      "name": "MonthSelect",
+      "value": "Jul 2019",
+      "bind": {
+        "input": "select",
+        "options": ["Jul 2019", "Jul 2023", "Jul 2024", "Jul 2025"],
+        "name": "Month: "
+      }
+    }
+  ],
+
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {"calculate": "'No data for ' + datum.properties.NAME", "as": "note"}
+      ],
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "encoding": {"tooltip": {"field": "note"}}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "skyblue", "opacity": 0.35}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.NAME == 'United States of America' ? 'USA' : datum.properties.NAME == 'United Kingdom' ? 'UK' : (datum.properties.NAME == 'Hong Kong S.A.R.' ? 'Hong Kong' : (indexof(lower(datum.properties.NAME), 'korea') >= 0 ? 'South Korea' : datum.properties.NAME))",
+          "as": "NAME_JOIN"
+        },
+        { "calculate": "datum.NAME_JOIN + '|' + MonthSelect", "as": "JOIN_KEY" },
+        {
+          "lookup": "JOIN_KEY",
+          "from": {
+            "data": {
+              "values": [
+                {"Key":"New Zealand|Jul 2019","Country":"New Zealand","Month":"Jul 2019","Arrivals":133630},
+                {"Key":"China|Jul 2019","Country":"China","Month":"Jul 2019","Arrivals":150390},
+                {"Key":"UK|Jul 2019","Country":"UK","Month":"Jul 2019","Arrivals":39300},
+                {"Key":"USA|Jul 2019","Country":"USA","Month":"Jul 2019","Arrivals":61530},
+                {"Key":"Japan|Jul 2019","Country":"Japan","Month":"Jul 2019","Arrivals":43000},
+                {"Key":"Singapore|Jul 2019","Country":"Singapore","Month":"Jul 2019","Arrivals":34020},
+                {"Key":"South Korea|Jul 2019","Country":"South Korea","Month":"Jul 2019","Arrivals":20930},
+                {"Key":"India|Jul 2019","Country":"India","Month":"Jul 2019","Arrivals":26040},
+                {"Key":"Hong Kong|Jul 2019","Country":"Hong Kong","Month":"Jul 2019","Arrivals":31110},
+                {"Key":"Taiwan|Jul 2019","Country":"Taiwan","Month":"Jul 2019","Arrivals":17180},
+                {"Key":"New Zealand|Jul 2023","Country":"New Zealand","Month":"Jul 2023","Arrivals":115960},
+                {"Key":"China|Jul 2023","Country":"China","Month":"Jul 2023","Arrivals":79040},
+                {"Key":"UK|Jul 2023","Country":"UK","Month":"Jul 2023","Arrivals":32990},
+                {"Key":"USA|Jul 2023","Country":"USA","Month":"Jul 2023","Arrivals":55980},
+                {"Key":"Japan|Jul 2023","Country":"Japan","Month":"Jul 2023","Arrivals":30540},
+                {"Key":"Singapore|Jul 2023","Country":"Singapore","Month":"Jul 2023","Arrivals":23560},
+                {"Key":"South Korea|Jul 2023","Country":"South Korea","Month":"Jul 2023","Arrivals":22950},
+                {"Key":"India|Jul 2023","Country":"India","Month":"Jul 2023","Arrivals":24120},
+                {"Key":"Hong Kong|Jul 2023","Country":"Hong Kong","Month":"Jul 2023","Arrivals":18450},
+                {"Key":"Taiwan|Jul 2023","Country":"Taiwan","Month":"Jul 2023","Arrivals":14120},
+                {"Key":"New Zealand|Jul 2024","Country":"New Zealand","Month":"Jul 2024","Arrivals":121320},
+                {"Key":"China|Jul 2024","Country":"China","Month":"Jul 2024","Arrivals":103840},
+                {"Key":"UK|Jul 2024","Country":"UK","Month":"Jul 2024","Arrivals":32840},
+                {"Key":"USA|Jul 2024","Country":"USA","Month":"Jul 2024","Arrivals":42030},
+                {"Key":"Japan|Jul 2024","Country":"Japan","Month":"Jul 2024","Arrivals":33240},
+                {"Key":"Singapore|Jul 2024","Country":"Singapore","Month":"Jul 2024","Arrivals":27300},
+                {"Key":"South Korea|Jul 2024","Country":"South Korea","Month":"Jul 2024","Arrivals":31090},
+                {"Key":"India|Jul 2024","Country":"India","Month":"Jul 2024","Arrivals":26860},
+                {"Key":"Hong Kong|Jul 2024","Country":"Hong Kong","Month":"Jul 2024","Arrivals":21430},
+                {"Key":"Taiwan|Jul 2024","Country":"Taiwan","Month":"Jul 2024","Arrivals":19790},
+                {"Key":"New Zealand|Jul 2025","Country":"New Zealand","Month":"Jul 2025","Arrivals":122910},
+                {"Key":"China|Jul 2025","Country":"China","Month":"Jul 2025","Arrivals":112900},
+                {"Key":"UK|Jul 2025","Country":"UK","Month":"Jul 2025","Arrivals":56460},
+                {"Key":"USA|Jul 2025","Country":"USA","Month":"Jul 2025","Arrivals":50090},
+                {"Key":"Japan|Jul 2025","Country":"Japan","Month":"Jul 2025","Arrivals":36210},
+                {"Key":"Singapore|Jul 2025","Country":"Singapore","Month":"Jul 2025","Arrivals":34300},
+                {"Key":"South Korea|Jul 2025","Country":"South Korea","Month":"Jul 2025","Arrivals":29720},
+                {"Key":"India|Jul 2025","Country":"India","Month":"Jul 2025","Arrivals":28560},
+                {"Key":"Hong Kong|Jul 2025","Country":"Hong Kong","Month":"Jul 2025","Arrivals":27000},
+                {"Key":"Taiwan|Jul 2025","Country":"Taiwan","Month":"Jul 2025","Arrivals":23660}
+              ]
+            },
+            "key": "Key",
+            "fields": ["Country", "Month", "Arrivals"]
+          }
+        },
+        {"filter": "isValid(datum.Arrivals)"},
+        {
+          "joinaggregate": [{"op": "max", "field": "Arrivals", "as": "MaxArrivals"}],
+          "groupby": ["Month"]
+        },
+        {"calculate": "datum.Arrivals == datum.MaxArrivals", "as": "IsMax"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "field": "Arrivals",
+          "type": "quantitative",
+          "title": "Arrivals (people)",
+          "scale": {"scheme": "blues"}
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"field": "Arrivals", "type": "quantitative", "format": ",", "title": "Arrivals"},
+          {"field": "Month", "type": "nominal", "title": "Month"}
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.NAME == 'United States of America' ? 'USA' : datum.properties.NAME == 'United Kingdom' ? 'UK' : (datum.properties.NAME == 'Hong Kong S.A.R.' ? 'Hong Kong' : (indexof(lower(datum.properties.NAME), 'korea') >= 0 ? 'South Korea' : datum.properties.NAME))",
+          "as": "NAME_JOIN"
+        },
+        { "calculate": "datum.NAME_JOIN + '|' + MonthSelect", "as": "JOIN_KEY" },
+        {
+          "lookup": "JOIN_KEY",
+          "from": {
+            "data": {
+              "values": [
+                {"Key":"New Zealand|Jul 2019","Month":"Jul 2019","Arrivals":133630},
+                {"Key":"China|Jul 2019","Month":"Jul 2019","Arrivals":150390},
+                {"Key":"UK|Jul 2019","Month":"Jul 2019","Arrivals":39300},
+                {"Key":"USA|Jul 2019","Month":"Jul 2019","Arrivals":61530},
+                {"Key":"Japan|Jul 2019","Month":"Jul 2019","Arrivals":43000},
+                {"Key":"Singapore|Jul 2019","Month":"Jul 2019","Arrivals":34020},
+                {"Key":"South Korea|Jul 2019","Month":"Jul 2019","Arrivals":20930},
+                {"Key":"India|Jul 2019","Month":"Jul 2019","Arrivals":26040},
+                {"Key":"Hong Kong|Jul 2019","Month":"Jul 2019","Arrivals":31110},
+                {"Key":"Taiwan|Jul 2019","Month":"Jul 2019","Arrivals":17180},
+                {"Key":"New Zealand|Jul 2023","Month":"Jul 2023","Arrivals":115960},
+                {"Key":"China|Jul 2023","Month":"Jul 2023","Arrivals":79040},
+                {"Key":"UK|Jul 2023","Month":"Jul 2023","Arrivals":32990},
+                {"Key":"USA|Jul 2023","Month":"Jul 2023","Arrivals":55980},
+                {"Key":"Japan|Jul 2023","Month":"Jul 2023","Arrivals":30540},
+                {"Key":"Singapore|Jul 2023","Month":"Jul 2023","Arrivals":23560},
+                {"Key":"South Korea|Jul 2023","Month":"Jul 2023","Arrivals":22950},
+                {"Key":"India|Jul 2023","Month":"Jul 2023","Arrivals":24120},
+                {"Key":"Hong Kong|Jul 2023","Month":"Jul 2023","Arrivals":18450},
+                {"Key":"Taiwan|Jul 2023","Month":"Jul 2023","Arrivals":14120},
+                {"Key":"New Zealand|Jul 2024","Month":"Jul 2024","Arrivals":121320},
+                {"Key":"China|Jul 2024","Month":"Jul 2024","Arrivals":103840},
+                {"Key":"UK|Jul 2024","Month":"Jul 2024","Arrivals":32840},
+                {"Key":"USA|Jul 2024","Month":"Jul 2024","Arrivals":42030},
+                {"Key":"Japan|Jul 2024","Month":"Jul 2024","Arrivals":33240},
+                {"Key":"Singapore|Jul 2024","Month":"Jul 2024","Arrivals":27300},
+                {"Key":"South Korea|Jul 2024","Month":"Jul 2024","Arrivals":31090},
+                {"Key":"India|Jul 2024","Month":"Jul 2024","Arrivals":26860},
+                {"Key":"Hong Kong|Jul 2024","Month":"Jul 2024","Arrivals":21430},
+                {"Key":"Taiwan|Jul 2024","Month":"Jul 2024","Arrivals":19790},
+                {"Key":"New Zealand|Jul 2025","Month":"Jul 2025","Arrivals":122910},
+                {"Key":"China|Jul 2025","Month":"Jul 2025","Arrivals":112900},
+                {"Key":"UK|Jul 2025","Month":"Jul 2025","Arrivals":56460},
+                {"Key":"USA|Jul 2025","Month":"Jul 2025","Arrivals":50090},
+                {"Key":"Japan|Jul 2025","Month":"Jul 2025","Arrivals":36210},
+                {"Key":"Singapore|Jul 2025","Month":"Jul 2025","Arrivals":34300},
+                {"Key":"South Korea|Jul 2025","Month":"Jul 2025","Arrivals":29720},
+                {"Key":"India|Jul 2025","Month":"Jul 2025","Arrivals":28560},
+                {"Key":"Hong Kong|Jul 2025","Month":"Jul 2025","Arrivals":27000},
+                {"Key":"Taiwan|Jul 2025","Month":"Jul 2025","Arrivals":23660}
+              ]
+            },
+            "key": "Key",
+            "fields": ["Month", "Arrivals"]
+          }
+        },
+        {"filter": "isValid(datum.Arrivals)"},
+        {
+          "joinaggregate": [{"op": "max", "field": "Arrivals", "as": "MaxArrivals"}],
+          "groupby": ["Month"]
+        },
+        {"filter": "datum.Arrivals == datum.MaxArrivals"}
+      ],
+      "mark": {"type": "geoshape", "fill": null, "stroke": "#222", "strokeWidth": 2.5}
+    }
+  ]
+}
