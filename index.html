@@ -1,47 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Australia COVID‑19 by State — Proportional Symbol Map (2020–2022)</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australia Travel – Trends & Origins</title>
 
-<!-- Vega / Vega‑Lite / Vega‑Embed -->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.19.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/pure-min.css" />
+  <link rel="stylesheet" href="styles.css" />
 
-<style>
-:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-.vis-wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
-.controls { margin: .5rem 0 1rem; }
-h1 { font-family: Georgia, serif; font-size: 22px; margin: 0 0 .25rem; }
-p.subtitle { font-family: Georgia, serif; font-size: 14px; margin: .1rem 0 1rem; color: #374151; }
-footer { color:#6b7280; font-size:12px; margin-top:.75rem }
-</style>
+  <!-- class versions -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+  <style>
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111;}
+    header{padding:1.5rem 1rem;border-bottom:1px solid #eee;}
+    .container{max-width:1200px;margin:0 auto;padding:1rem;}
+    h1{margin:.25rem 0 0;font-size:1.9rem;}
+    .muted{color:#666}
+    .card{background:#fafafa;border:1px solid #eee;border-radius:16px;padding:1rem;}
+    .grid-gap{gap:1rem;}
+    figure{margin:0;}
+    figcaption{font-size:.9rem;color:#666;margin-top:.5rem;}
+  </style>
 </head>
 <body>
-<div class="vis-wrap">
-<h1>COVID‑19 Diagnoses by State/Territory (Australia, 2020–2022)</h1>
-<p class="subtitle">Proportional symbols show diagnosed counts; colour shows % with COVID‑19. Use the controls to switch waves or focus a state.</p>
+  <header class="container">
+    <h1>Australia Travel: Trends & Origins</h1>
+    <p class="muted">ABS OAD</p>
+  </header>
 
-<div id="controls" class="controls" role="group" aria-label="Map filters"></div>
-<div id="choropleth_map"></div>
+  <main class="container">
+    <div class="pure-g grid-gap">
+      <div class="pure-u-1 pure-u-md-1-2">
+        <figure class="card">
+          <h3>Total Overseas Arrivals & Departures (Monthly)</h3>
+          <div id="total-travel-chart"></div>
+          <figcaption>Two-line chart (millions). Hover for exact values.</figcaption>
+        </figure>
+      </div>
 
-<footer>Source: https://www.aihw.gov.au/reports-data/health-conditions-disability-deaths/covid-19/data </footer>
-</div>
+      <div class="pure-u-1 pure-u-md-1-2">
+        <figure class="card">
+          <h3>Visitor Origins: Top Countries to Australia</h3>
+          <div id="visitors-map"></div>
+          <figcaption>Select a month (dropdown in chart). Top country is outlined.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
 
-<script>
-vegaEmbed(
-  '#choropleth_map',
-  'https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/choropleth_map.vg.json?v=' + Date.now(),
-  {
-    actions: false,
-    bind: '#controls'
+  <script>
+  async function embedSpec(el, url){
+    const res = await fetch(url);
+    const spec = await res.json();
+    return vegaEmbed(el, spec, { actions:false, mode:"vega-lite" });
   }
-).catch(console.error);
+  embedSpec("#total-travel-chart",
+    "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total-travel.json");
+  embedSpec("#visitors-map",
+    "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/visitors-map.json");
 </script>
-</body>
-</html>
-
-
-
