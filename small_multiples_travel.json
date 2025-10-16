@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Small multiples of travel categories across Aug 2019, 2023, 2024, 2025. Lines are colored by Category using a palette with no blue/green/red hues.",
+  "background": "transparent",
+  "data": {
+    "values": [
+      {"Category":"Permanent arrivals","2019":9660,"2023":13230,"2024":12490,"2025":11770},
+      {"Category":"Long-term resident returns","2019":11880,"2023":12080,"2024":11350,"2025":11280},
+      {"Category":"Short-term resident returns","2019":930970,"2023":858540,"2024":916890,"2025":972070},
+      {"Category":"Long-term visitor arrivals","2019":40960,"2023":57490,"2024":56940,"2025":61360},
+      {"Category":"Short-term visitor arrivals","2019":789200,"2023":603360,"2024":658810,"2025":753320},
+
+      {"Category":"Long-term resident departures","2019":26460,"2023":27040,"2024":31620,"2025":26170},
+      {"Category":"Short-term resident departures","2019":958520,"2023":866380,"2024":948500,"2025":998180},
+      {"Category":"Long-term visitor departures","2019":17620,"2023":21500,"2024":25370,"2025":26800},
+      {"Category":"Short-term visitor departures","2019":807070,"2023":601580,"2024":688950,"2025":783480}
+    ]
+  },
+  "transform": [
+    {"fold": ["2019","2023","2024","2025"], "as": ["Year","Value"]},
+    {"calculate": "toNumber(datum.Year)", "as": "YearNum"}
+  ],
+  "facet": {"field": "Category", "type": "nominal", "title": null},
+  "columns": 3,
+  "spec": {
+    "width": 240,
+    "height": 150,
+    "layer": [
+      {
+        "mark": {"type": "line", "point": {"filled": true, "size": 60}},
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal",
+            "sort": ["2019","2023","2024","2025"],
+            "axis": {"title": null, "labelAngle": 0}
+          },
+          "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Travellers (no.)",
+            "axis": {"labelOverlap": true}
+          },
+          "color": {
+            "field": "Category",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+              "range": [
+                "#8E44AD",  
+                "#F39C12",  
+                "#F1C40F",  
+                "#EC407A",  
+                "#795548",  
+                "#9E9E9E",  
+                "#6A1B9A",  
+                "#D4AC0D",  
+                "#A569BD"   
+              ]
+            }
+          },
+          "tooltip": [
+            {"field": "Category"},
+            {"field": "Year"},
+            {"field": "Value", "type": "quantitative", "format": ","}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "rule", "strokeDash": [4,4], "opacity": 0.3},
+        "encoding": {
+          "y": {"aggregate": "mean", "field": "Value", "type": "quantitative"},
+          "tooltip": [
+            {"field": "Category", "title": "Category"},
+            {"aggregate": "mean", "field": "Value", "type": "quantitative", "title": "Panel mean", "format": ","}
+          ]
+        }
+      }
+    ]
+  },
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent"},
+    "view": {"stroke": "#e8e2d8", "cornerRadius": 8}
+  }
+}
+
+
