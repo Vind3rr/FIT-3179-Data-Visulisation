@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/travel_spend_bubble.csv"},
+  "transform": [
+    {"filter": "datum.Category !== 'Total'"},
+    {"fold": ["AvgPerTrip", "AvgPerNight"], "as": ["Metric", "Value"]},
+    {
+      "joinaggregate": [
+        {"op": "max", "field": "Value", "as": "MaxVal"},
+        {"op": "min", "field": "Value", "as": "MinVal"}
+      ],
+      "groupby": ["Category"]
+    }
+  ],
+  "width": 720,
+  "height": 320,
+  "encoding": {
+    "y": {"field": "Category", "type": "nominal", "sort": "-x", "title": null}
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "strokeWidth": 3, "opacity": 0.4},
+      "encoding": {
+        "x": {"field": "MinVal", "type": "quantitative", "title": "Spend ($)"},
+        "x2": {"field": "MaxVal"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 80},
+      "encoding": {
+        "x": {"field": "Value", "type": "quantitative", "title": "Spend ($)"},
+        "color": {
+          "field": "Metric",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["AvgPerTrip", "AvgPerNight"],
+            "range": ["#9B5DE5", "#F15BB5"]   
+          }
+        },
+        "tooltip": [
+          {"field": "Category"},
+          {"field": "Metric", "title": "Metric"},
+          {"field": "Value", "type": "quantitative", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "config": {"axis": {"grid": true}}
+}
+
