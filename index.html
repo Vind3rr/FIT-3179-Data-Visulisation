@@ -3,62 +3,437 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Australia Travel – Trends & Origins</title>
+  <title>Flights, Funds &amp; Fun: The Story of Aussie Travel</title>
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/pure-min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <!-- fixed filename -->
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- class versions -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <!-- Vega stack (Vega-Lite v5) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6" defer></script>
 
   <style>
-    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111;}
-    header{padding:1.5rem 1rem;border-bottom:1px solid #eee;}
-    .container{max-width:1200px;margin:0 auto;padding:1rem;}
-    h1{margin:.25rem 0 0;font-size:1.9rem;}
-    .muted{color:#666}
-    .card{background:#fafafa;border:1px solid #eee;border-radius:16px;padding:1rem;}
-    .grid-gap{gap:1rem;}
-    figure{margin:0;}
-    figcaption{font-size:.9rem;color:#666;margin-top:.5rem;}
+    :root{
+      --bg-beige: #f6f2e7;
+      --card-bg:  #fffdf8;
+      --border:   #e8e2d8;
+      --text:     #111;
+      --muted:    #666;
+    }
+
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      color:var(--text);
+      background:var(--bg-beige);
+    }
+
+    header{
+      padding:1.5rem 1rem;
+      border-bottom:1px solid var(--border);
+      background:transparent;
+      text-align:center;
+    }
+
+    .container{ max-width:1200px; margin:0 auto; padding:1rem; }
+
+    h1{
+      margin:0;
+      font-size:2.4rem;
+      font-weight:700;
+      font-family:"Georgia", serif;
+      letter-spacing:.5px;
+    }
+
+    .card{
+      background:var(--card-bg);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:1rem;
+      box-shadow:0 1px 0 rgba(0,0,0,0.02);
+    }
+
+    .grid-gap{ gap:1rem; }
+
+    figcaption{ font-size:.9rem; color:var(--muted); margin-top:.5rem; }
+
+    footer{
+      margin-top:2rem;
+      color:#666;
+      font-size:.9rem;
+      text-align:center;
+      padding:1rem 0;
+      border-top:1px solid var(--border);
+      background:rgba(255,255,255,0.4);
+    }
+
+    .kpi-container{ display:flex; justify-content:center; width:100%; margin:1.25rem auto 0.75rem; }
+    .kpi-grid{
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:1rem 1.6rem; max-width:980px; width:100%;
+      justify-items:center; text-align:center;
+    }
+    .kpi-item{
+      background:var(--card-bg);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:1rem 1.2rem;
+      width:100%; max-width:280px;
+      box-shadow:0 1px 3px rgba(0,0,0,0.05);
+      line-height:1.5; font-size:1rem;
+    }
+    .kpi-item strong{ display:block; font-size:1.05rem; margin-bottom:.2rem; color:#333; }
+    .pct{ color:#555; font-size:.95rem; }
+    .arrow{ font-weight:700; font-size:1rem; margin:0 .15rem; }
+    .arrow.up{ color:#0c8c34; } .arrow.down{ color:#d61c1c; }
+
+    /* Responsive */
+    @media (max-width:900px){ .kpi-grid{ grid-template-columns:repeat(2,1fr);} }
+    @media (max-width:600px){ .kpi-grid{ grid-template-columns:1fr;} }
+
+    .intro-text{ max-width:850px; margin:0 auto 1rem; color:black; font-size:1.0rem; line-height:1.6; text-align:center; }
+    main.container{ margin-top:0; padding-top:0; }
+
+    .hero-section{
+      position:relative;
+      color:#fff;
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        /* fixed to RAW URL */
+        url('https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/jpeg_medium_202112291737-8bbfdac5ccca22bd31fe0150e0a52828.jpeg') center/cover no-repeat;
+      padding: 1rem 0 1.75rem;
+    }
+    .hero-section header{ border-bottom:0; }
+    .hero-section h1{ color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.6); }
+    .hero-section .kpi-item{
+      background:rgba(255,255,255,0.86);
+      border:1px solid rgba(255,255,255,0.45);
+      color:#111;
+      backdrop-filter: blur(3px);
+      box-shadow:0 2px 6px rgba(0,0,0,0.12);
+    }
   </style>
 </head>
+
 <body>
-  <header class="container">
-    <h1>Australia Travel: Trends & Origins</h1>
-    <p class="muted">ABS OAD</p>
-  </header>
+  <section class="hero-section">
+    <header class="container">
+      <h1>Flights, Funds &amp; Fun: The Story of Aussie Travel</h1>
+    </header>
+
+    <section class="kpi-container">
+      <div class="kpi-grid">
+        <div class="kpi-item">
+          🏡 <strong>Short-term Returns</strong><br>
+          972,070 <span class="arrow up">▲</span> <span class="pct">6.0%</span>
+        </div>
+
+        <div class="kpi-item">
+          ✈️ <strong>Total Departures</strong><br>
+          1,834,620 <span class="arrow up">▲</span> <span class="pct">8.3%</span>
+        </div>
+
+        <div class="kpi-item">
+          🌏 <strong>Top Intl. Destination</strong><br>
+          Indonesia <span class="pct">(161,660 trips)</span>
+        </div>
+
+        <div class="kpi-item">
+          🐨 <strong>Top Domestic Destination</strong><br>
+          Queensland <span class="pct">(15%)</span>
+        </div>
+
+        <div class="kpi-item">
+          💰 <strong>Avg Holiday Budget</strong><br>
+          Domestic: $1k–$5k <span class="pct">(58%)</span>
+        </div>
+
+        <div class="kpi-item">
+          💳 <strong>Avg Intl. Budget</strong><br>
+          $1k–$10k <span class="pct">(82%)</span>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="intro-text container">
+    <p>
+      Australians are embracing travel once again, exploring both nearby and distant horizons.
+      These insights highlight key travel patterns: from rising short-term returns to renewed
+      international adventures and evolving spending habits shaping the journey ahead.
+    </p>
+  </section>
 
   <main class="container">
     <div class="pure-g grid-gap">
       <div class="pure-u-1 pure-u-md-1-2">
         <figure class="card">
-          <h3>Total Overseas Arrivals & Departures (Monthly)</h3>
+          <h3>Up, Up &amp; Grounded: Australia's Travel Rollercoaster</h3>
+          <p class="chart-intro">
+            Australians hit record highs just before the pandemic, then travel collapsed in early 2020.
+            As borders reopened in 2022, both arrivals and departures began to recover. 
+            By 2024–25, the skies were nearly as busy as before, a clear sign that the Aussie travel spirit is back.
+          </p>
           <div id="total-travel-chart"></div>
-          <figcaption>Two-line chart (millions). Hover for exact values.</figcaption>
+          <figcaption>
+            Hover on each point for exact monthly values for both arrivals and departures.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Aussies on the Move: Every Category’s Flight Path</h3>
+          <p class="chart-intro limited-width">
+            Each category shows how international travel has evolved since 2019.  
+            Short-term travel remains the largest share, with clear rebounds in both  
+            arrivals and departures after the pandemic low.  Long-term and permanent  
+            movements stayed steadier, showing smaller post-COVID variation.  
+            Together these panels trace Australia’s gradual return to global mobility.
+          </p>
+          <div id="stm-grid"></div>
+          <figcaption>
+            One panel per travel category, showing August counts for 2019, 2023, 2024 and 2025.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>From Roos to Runways: Travel Trends at a Glance</h3>
+          <p class="chart-intro limited-width">
+            Travel patterns shifted unevenly between 2024 and 2025.  
+            Short-term visitor arrivals surged the most, while resident  
+            returns also climbed modestly.  At the same time, permanent  
+            arrivals and long-term resident departures declined, hinting  
+            at fewer Australians moving abroad for extended stays.  
+            Overall, quick trips are back and long stays are lagging.
+          </p>
+          <div id="pct-change"></div>
+          <figcaption>
+            Positive values = increases; negative = decreases.
+          </figcaption>
         </figure>
       </div>
 
       <div class="pure-u-1 pure-u-md-1-2">
         <figure class="card">
-          <h3>Visitor Origins: Top Countries to Australia</h3>
+          <h3>Who is Visiting the Kangaroo Kingdom?</h3>
+          <p class="chart-intro limited-width">
+            New Zealand remains Australia’s most frequent visitor, with arrivals topping  
+            120,000 in July 2025, nearly double the UK and USA. China rebounded strongly  
+            after reopening, regaining second place, while Japan and Singapore also  
+            continued steady climbs. South Korea, India, and Hong Kong saw modest gains,  
+            showing the region’s travel ties are firmly back in motion.
+          </p>
           <div id="visitors-map"></div>
-          <figcaption>Select a month (dropdown in chart). Top country is outlined.</figcaption>
+          <figcaption>
+            Overseas visitor arrivals to Australia (July 2019, 2023, 2024, and 2025).
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>The Great Return Rush: Where Aussies Are Flying Back From</h3>
+          <p class="chart-intro limited-width">
+            Australians are returning from familiar favourites and a few rising stars.  
+            Indonesia leads the pack once again, followed by steady flows from New Zealand  
+            and the UK.  Asian destinations such as Japan, Thailand, and Vietnam show  
+            remarkable rebounds, reflecting renewed confidence in regional travel.  
+            The USA and Italy slipped slightly, suggesting Aussies are favouring  
+            closer adventures for now.
+          </p>
+          <div id="bump-chart"></div>
+          <figcaption>
+            Hover a line to see the month/year, rank, and number of travellers.  
+            Rank is computed per year from traveller counts.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Hot Spots of Homecoming: Where Aussies Returned Most!</h3>
+          <p class="chart-intro limited-width">
+            New South Wales and Victoria remain the biggest homecoming hubs.  
+            Queensland accelerates post-2023, setting fresh highs by July 2025.  
+            Western Australia keeps climbing, with steady gains year over year.  
+            South Australia and Tasmania recover to around or above 2019 levels.  
+            ACT edges higher, while the Northern Territory rebounds but trails 2019.
+          </p>
+          <div id="aus-heatmap"></div>
+          <figcaption>
+            Values are July counts for 2019, 2023, 2024, and 2025.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Love, Leisure, or Work? Depends Who You Ask!</h3>
+          <p class="chart-intro limited-width">
+            Holidays top the list for everyone, but women lead slightly  
+            in leisure and visiting friends or relatives.  Men travel  
+            more often for business, conferences, and work.  Education  
+            and other reasons stay balanced, showing travel choices  
+            depend as much on purpose as on personality.
+          </p>
+          <div id="short-term-reason-grouped"></div>
+          <figcaption>
+            Short-term trip purposes by gender, expressed as percentages of total travellers.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Big Spenders vs Budget Blenders: How Aussies Holiday</h3>
+          <p class="chart-intro limited-width">
+            Most Australians spend between one and five thousand dollars  
+            on holidays, whether local or overseas.  Domestic travellers  
+            keep costs modest, with few spending beyond five thousand.  
+            International trips stretch the wallet, more than a quarter  
+            spend five to ten thousand, and some exceed ten grand.
+          </p>
+          <div id="holiday-budget-radial"></div>
+          <figcaption>
+            Comparison of domestic and international holiday spending ranges (% of travellers).
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Spend It Like You Mean It! The Price of Aussie Adventures</h3>
+          <p class="chart-intro limited-width">
+            Food, flights, and accommodation share the biggest slice of  
+            Aussie travel spending, each topping three billion dollars.  
+            Shopping and souvenirs trail behind, while package tours take  
+            fewer dollars but higher costs per trip.  Together they show  
+            Aussies value comfort, connection, and a good meal on holiday.
+          </p>
+          <div id="travel-spend-bubble"></div>
+          <figcaption>
+            Total and average travel spending by category (billions and per-trip figures).
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pure-u-1">
+        <figure class="card">
+          <h3>Fare Enough! Tracking Melbourne’s Flight Deals Over Time</h3>
+          <p class="chart-intro limited-width">
+            More than half of Australians, about 57 per cent,  
+            plan to take a domestic trip within the next year.  
+            The chart below tracks average flight fares from  
+            Melbourne to key local destinations, including the  
+            Gold Coast, Mildura, Newcastle, Perth, Sydney,  
+            and Townsville, showing how travel costs shift over time.
+          </p>
+          <div id="mel-fares"></div>
+          <figcaption>
+            Origin fixed to Melbourne. Use the dropdown to select a destination.
+          </figcaption>
         </figure>
       </div>
     </div>
   </main>
 
+  <footer>
+    <p><strong>Author:</strong> Gurvinder Singh | <strong>Date:</strong> 19 Oct 2025</p>
+    <p><strong>Resources:</strong> 
+      <a href="https://vega.github.io/vega-lite/examples/" target="_blank">Vega-Lite Examples</a>
+    </p>
+    <p><strong>Image:</strong> 
+      <a href="https://www.destguides.com/australia/famous-australian-landmarks" target="_blank">
+        Famous Australian Landmarks – Destguides
+      </a>
+    </p>
+    <p><strong>Sources Link:</strong></p>
+    <ul>
+      <li><a href="https://www.bitre.gov.au/statistics/aviation/air_fares#domestic" target="_blank">BITRE – Air Fares (Domestic)</a></li>
+      <li><a href="https://www.abs.gov.au/articles/overseas-arrivals-and-departures-australia-2024-25-financial-year#stva-main-reason-for-journey" target="_blank">ABS – Overseas Arrivals &amp; Departures 2024–25 (Reasons)</a></li>
+      <li><a href="https://www.abs.gov.au/statistics/industry/tourism-and-transport/overseas-arrivals-and-departures-australia/latest-release" target="_blank">ABS – Overseas Arrivals &amp; Departures (Latest Release)</a></li>
+      <li><a href="https://www.budgetdirect.com.au/travel-insurance/research/average-holiday-cost-statistics.html" target="_blank">Budget Direct – Average Holiday Cost Statistics</a></li>
+      <li><a href="https://www.destinationnsw.com.au/newsroom/australians-favour-domestic-travel-in-2025" target="_blank">Destination NSW – Australians favour domestic travel in 2025</a></li>
+    </ul>
+  </footer>
+
   <script>
-  async function embedSpec(el, url){
-    const res = await fetch(url);
-    const spec = await res.json();
-    return vegaEmbed(el, spec, { actions:false, mode:"vega-lite" });
-  }
-  embedSpec("#total-travel-chart",
-    "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total-travel.json");
-  embedSpec("#visitors-map",
-    "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/visitors-map.json");
-</script>
+    const RAW_BASE = "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/";
+
+    function waitForVegaStack(){
+      return new Promise(resolve => {
+        const check = () => { if (window.vega && window.vegaLite && window.vegaEmbed) return resolve(); setTimeout(check, 30); };
+        check();
+      });
+    }
+
+    function embedSpec(el, url){
+      return vegaEmbed(el, url, { actions:false, mode:"vega-lite" })
+        .catch(err => {
+          console.error(`Failed to embed ${url}:`, err);
+          const target = document.querySelector(el);
+          if (target) target.innerHTML = `<div style="color:#b00020">Failed to load ${url}. Check console for details.</div>`;
+        });
+    }
+
+    async function embedFaresWithOptions(el, specUrl, csvUrl){
+      try {
+        const spec = await (await fetch(specUrl)).json();
+        const text = await (await fetch(csvUrl)).text();
+
+        const lines = text.split(/\r?\n/).filter(Boolean);
+        const header = lines.shift().split(",");
+        const idxP1 = header.indexOf("Port1");
+        const idxP2 = header.indexOf("Port2");
+        const dests = new Set();
+
+        for (const line of lines) {
+          const cols = line.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
+          const p1 = (cols[idxP1] || "").replace(/^"|"$/g, "");
+          const p2 = (cols[idxP2] || "").replace(/^"|"$/g, "");
+          if (p1 === "Melbourne" && p2) dests.add(p2);
+        }
+
+        const options = Array.from(dests).sort();
+        if (Array.isArray(spec.params) && spec.params[0] && spec.params[0].bind) {
+          spec.params[0].bind.options = options.length ? options : ["Sydney"];
+          spec.params[0].value = options.length ? options[0] : "Sydney";
+        }
+
+        await vegaEmbed(el, spec, { actions:false, mode:"vega-lite" });
+      } catch (e) {
+        console.error("Failed to embed fares spec:", e);
+        const target = document.querySelector(el);
+        if (target) target.innerHTML = `<div style="color:#b00020">Failed to load fares chart. Check console for details.</div>`;
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await waitForVegaStack();
+
+      // point each chart to the raw JSON in your repo
+      embedSpec("#total-travel-chart", RAW_BASE + "total-travel.json");
+      embedSpec("#stm-grid",                RAW_BASE + "small_multiples_travel.json");
+      embedSpec("#pct-change",              RAW_BASE + "percent_change_lollipop.json");
+      embedSpec("#visitors-map",            RAW_BASE + "visitors-map.json");
+      embedSpec("#bump-chart",              RAW_BASE + "bump_chart.json");
+      embedSpec("#aus-heatmap",             RAW_BASE + "aus_heatmap.json");
+      embedSpec("#short-term-reason-grouped", RAW_BASE + "short_term_reason_grouped.json");
+      embedSpec("#holiday-budget-radial",   RAW_BASE + "holiday_budget_radial_side_by_side.json");
+      embedSpec("#travel-spend-bubble",     RAW_BASE + "travel_spend_bubble.json");
+
+      // fares chart: raw JSON spec + raw CSV for destination options
+      embedFaresWithOptions(
+        "#mel-fares",
+        RAW_BASE + "melbourne_fares.json",
+        RAW_BASE + "Fares_Port1_Melbourne.csv"
+      );
+    });
+  </script>
+</body>
+</html>
