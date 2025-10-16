@@ -1,21 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Visitor Origins: Top Countries to Australia",
   "width": 750,
   "height": 450,
   "projection": {"type": "equalEarth"},
-
+  
   "params": [
-    {
-      "name": "MonthSelect",
-      "value": "Jul 2019",
-      "bind": {
-        "input": "select",
-        "options": ["Jul 2019", "Jul 2023", "Jul 2024", "Jul 2025"],
-        "name": "Month: "
-      }
+  {
+    "name": "MonthSelect",
+    "value": "Jul 2019",
+    "bind": {
+      "input": "radio",
+      "options": ["Jul 2019", "Jul 2023", "Jul 2024", "Jul 2025"],
+      "labels": [" Jul 2019     ", " Jul 2023     ", " Jul 2024     ", " Jul 2025     "],
+      "name": "Select Month: "
     }
-  ],
+  }
+],
 
   "layer": [
     {
@@ -121,7 +121,7 @@
           "field": "Arrivals",
           "type": "quantitative",
           "title": "Arrivals (people)",
-          "scale": {"scheme": "blues"}
+          "scale": {"scheme": "oranges"}
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
