@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "spacing": 20,
+  "hconcat": [
+    {
+      "title": "Domestic Holiday",
+      "data": {
+        "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/holiday_budget_distribution.csv"
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 80,
+        "stroke": "#fff"
+      },
+      "encoding": {
+        "theta": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "stack": true
+        },
+        "radius": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "zero": true,
+            "rangeMin": 100,
+            "rangeMax": 200
+          },
+          "title": null
+        },
+        "color": {
+          "field": "Budget Range",
+          "type": "nominal",
+          "title": "Budget Range",
+          "sort": [
+            "Less than $1000",
+            "$1000 - $5000",
+            "$5000 - $10000",
+            "More than $10000"
+          ],
+          "scale": {
+            "domain": [
+              "Less than $1000",
+              "$1000 - $5000",
+              "$5000 - $10000",
+              "More than $10000"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Budget Range",
+            "type": "nominal"
+          },
+          {
+            "field": "Percentage",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Share (%)"
+          }
+        ]
+      },
+      "view": {
+        "stroke": null
+      },
+      "width": 400,
+      "height": 400
+    },
+    {
+      "title": "International Holiday",
+      "data": {
+        "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/international_holiday_budget_distribution.csv"
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 80,
+        "stroke": "#fff"
+      },
+      "encoding": {
+        "theta": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "stack": true
+        },
+        "radius": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "zero": true,
+            "rangeMin": 100,
+            "rangeMax": 200
+          },
+          "title": null
+        },
+        "color": {
+          "field": "Budget Range",
+          "type": "nominal",
+          "title": "Budget Range",
+          "sort": [
+            "Less than $1000",
+            "$1000 - $5000",
+            "$5000 - $10000",
+            "More than $10000"
+          ],
+          "scale": {
+            "domain": [
+              "Less than $1000",
+              "$1000 - $5000",
+              "$5000 - $10000",
+              "More than $10000"
+            ]
+          },
+          "legend": {
+            "title": "Budget Range",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Budget Range",
+            "type": "nominal"
+          },
+          {
+            "field": "Percentage",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Share (%)"
+          }
+        ]
+      },
+      "view": {
+        "stroke": null
+      },
+      "width": 400,
+      "height": 400
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  },
+  "config": {
+    "legend": {
+      "orient": "right"
+    }
+  }
+}
