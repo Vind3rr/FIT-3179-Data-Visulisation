@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 820,
+  "height": 420,
+
+  "data": {
+    "values": [
+      {"Country of Stay":"Indonesia","Jul 2019":142270,"Jul 2023":137750,"Jul 2024":169520,"Jul 2025":176330},
+      {"Country of Stay":"New Zealand","Jul 2019":123510,"Jul 2023":103740,"Jul 2024":117770,"Jul 2025":125790},
+      {"Country of Stay":"UK","Jul 2019":93350,"Jul 2023":82510,"Jul 2024":85220,"Jul 2025":87690},
+      {"Country of Stay":"USA","Jul 2019":104010,"Jul 2023":61660,"Jul 2024":72380,"Jul 2025":70570},
+      {"Country of Stay":"Thailand","Jul 2019":50860,"Jul 2023":46780,"Jul 2024":58410,"Jul 2025":60650},
+      {"Country of Stay":"Japan","Jul 2019":34690,"Jul 2023":35840,"Jul 2024":53880,"Jul 2025":56440},
+      {"Country of Stay":"China","Jul 2019":42070,"Jul 2023":36400,"Jul 2024":43240,"Jul 2025":50810},
+      {"Country of Stay":"Italy","Jul 2019":47660,"Jul 2023":59160,"Jul 2024":53960,"Jul 2025":50690},
+      {"Country of Stay":"Vietnam","Jul 2019":28200,"Jul 2023":28850,"Jul 2024":40330,"Jul 2025":48570},
+      {"Country of Stay":"Fiji","Jul 2019":37560,"Jul 2023":40650,"Jul 2024":43600,"Jul 2025":43310}
+    ]
+  },
+
+  "transform": [
+    {"fold": ["Jul 2019","Jul 2023","Jul 2024","Jul 2025"], "as": ["Year","Travellers"]},
+    {"calculate": "toNumber(datum.Travellers)", "as": "TravellersNum"},
+    {
+      "window": [{"op":"rank","as":"Rank"}],
+      "sort": [{"field":"TravellersNum","order":"descending"}],
+      "groupby": ["Year"]
+    }
+  ],
+
+  "mark": {
+    "type": "line",
+    "orient": "vertical",
+    "point": {"filled": true, "size": 50},
+    "strokeWidth": 3
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "sort": ["Jul 2019","Jul 2023","Jul 2024","Jul 2025"],
+      "axis": {"title": null, "labelAngle": 0}
+    },
+    "y": {
+      "field": "Rank",
+      "type": "quantitative",
+      "scale": {"reverse": true, "domain": [1,10]},
+      "axis": {"title": "Rank (1 = most returns)", "tickMinStep": 1}
+    },
+    "color": {
+      "field": "Country of Stay",
+      "type": "nominal",
+      "legend": {"title": "Country"},
+      "scale": {
+        "range": [
+          "#1f77b4",  
+          "#ff7f0e",  
+          "#9467bd",  
+          "#8c564b",  
+          "#e377c2",  
+          "#7f7f7f",  
+          "#17becf",  
+          "#b59f3b",  
+          "#2c3e50",  
+          "#708090"   
+        ]
+      }
+    },
+    "detail": {"field": "Country of Stay"},
+    "tooltip": [
+      {"field": "Country of Stay", "title": "Country"},
+      {"field": "Year", "title": "Year"},
+      {"field": "TravellersNum", "title": "Travellers", "type": "quantitative", "format": ","},
+      {"field": "Rank", "title": "Rank", "type": "quantitative"}
+    ]
+  },
+
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": true, "tickBand": "extent"}
+  }
+}
+
+
+
