@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Real (CPI-adjusted) Discount Airfares from Melbourne with destination selector.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/Fares_Port1_Melbourne.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "Year": "number",
+        "Month": "number",
+        "$Real": "number",
+        "$Value": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "dest",
+      "value": "",
+      "bind": {
+        "input": "select",
+        "name": "Destination: ",
+        "options": []
+      }
+    }
+  ],
+  "transform": [
+    { "filter": "datum.Port1 === 'Melbourne'" },
+    { "filter": "datum.Port2 === dest" },
+    { "calculate": "datetime(datum.Year, datum.Month - 1, 1)", "as": "Date" }
+  ],
+  "vconcat": [
+    {
+      "width": 1000,
+      "height": 260,
+      "mark": { "type": "line", "point": {"filled": true, "size": 50}, "color": "#FFB703" },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "",
+          "axis": { "format": "%Y", "grid": false }
+        },
+        "y": { "field": "$Real", "type": "quantitative", "title": "Cheapest fare (real $)" },
+        "tooltip": [
+          { "field": "Port2", "title": "Destination" },
+          { "field": "Date", "type": "temporal", "title": "Month", "format": "%b %Y" },
+          { "field": "$Real", "type": "quantitative", "title": "Fare (real $)", "format": ".0f" },
+          { "field": "$Value", "type": "quantitative", "title": "Fare (nominal $)", "format": ".0f" }
+        ]
+      }
+    },
+    {
+      "hconcat": [
+        {
+          "width": 480,
+          "height": 240,
+          "mark": { "type": "bar", "color": "#7F4F24" },
+          "encoding": {
+            "x": { "field": "Year", "type": "ordinal", "title": "Year", "sort": "ascending" },
+            "y": { "aggregate": "mean", "field": "$Real", "type": "quantitative", "title": "Avg (real $)" },
+            "tooltip": [
+              { "field": "Year", "title": "Year" },
+              { "aggregate": "mean", "field": "$Real", "title": "Avg real $", "format": ".0f" }
+            ]
+          }
+        },
+        {
+          "width": 480,
+          "height": 240,
+          "mark": { "type": "bar", "color": "#F4A261" },
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "ordinal",
+              "title": "Month",
+              "sort": [1,2,3,4,5,6,7,8,9,10,11,12],
+              "axis": {
+                "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value-1]"
+              }
+            },
+            "y": { "aggregate": "mean", "field": "$Real", "type": "quantitative", "title": "Avg (real $)" },
+            "tooltip": [
+              { "field": "Month", "type": "ordinal", "title": "Month" },
+              { "aggregate": "mean", "field": "$Real", "title": "Avg real $", "format": ".0f" }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "axis": { "labelColor": "#333", "titleColor": "#333" }
+  }
+}
+
+
+
