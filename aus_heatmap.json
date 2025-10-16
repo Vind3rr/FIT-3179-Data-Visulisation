@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of short-term resident returns by Australian state/territory for July 2019–2025.",
+  "data": { "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/short_term_resident_returns_states_2019_2025_long.csv" },
+  "width": 800,
+  "height": 400,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year (July)"
+    },
+    "y": {
+      "field": "state_or_territory_of_stay",
+      "type": "nominal",
+      "title": "State / Territory"
+    },
+    "color": {
+      "field": "visitors",
+      "type": "quantitative",
+      "title": "Arrivals",
+      "scale": {
+        "range": ["#fff0c2", "#f9b7ff", "#ce63d9", "#8b00a6"]
+    }
+  },
+    "tooltip": [
+      {"field": "state_or_territory_of_stay", "type": "nominal", "title": "State/Territory"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "visitors", "type": "quantitative", "title": "Arrivals", "format": ","}
+    ]
+  },
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent"},
+    "view": {"stroke": "transparent"},
+    "legend": { "format": ".0f" }
+  }
+}
+
+
+
