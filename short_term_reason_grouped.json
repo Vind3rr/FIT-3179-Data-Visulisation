@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/short_term_reason_for_travel.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Male (%)",
+        "Female (%)"
+      ],
+      "as": [
+        "Sex",
+        "Percent"
+      ]
+    },
+    {
+      "calculate": "toNumber(datum.Percent) / 100",
+      "as": "Share"
+    }
+  ],
+  "width": 820,
+  "height": 320,
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Reason for Journey",
+      "type": "nominal",
+      "title": "Reason",
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Share",
+      "type": "quantitative",
+      "title": "Percent (%)",
+      "axis": {
+        "format": ".0%"
+      }
+    },
+    "color": {
+      "field": "Sex",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Male (%)",
+          "Female (%)"
+        ],
+        "range": ["#b388eb", "#ff6f61"]
+      },
+      "title": "Sex",
+      "legend": {
+        "orient": "right"
+      }
+    },
+    "xOffset": {
+      "field": "Sex"
+    },
+    "tooltip": [
+      {
+        "field": "Reason for Journey",
+        "type": "nominal",
+        "title": "Reason"
+      },
+      {
+        "field": "Sex",
+        "type": "nominal"
+      },
+      {
+        "field": "Percent",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Percent (%)"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
