@@ -1,0 +1,1021 @@
+Year,Month,YearMonth,Port1,Port2,Route,$Value,$Real
+2010,1,201001,Melbourne,Gold Coast,Melbourne - Gold Coast,118.0,175.512605
+2010,1,201001,Melbourne,Mildura,Melbourne - Mildura,174.0,258.8067227
+2010,1,201001,Melbourne,Perth,Melbourne - Perth,316.0,470.0168067
+2010,1,201001,Melbourne,Sydney,Melbourne - Sydney,56.0,83.29411765
+2010,1,201001,Melbourne,Newcastle,Melbourne - Newcastle,144.0,214.1848739
+2010,2,201002,Melbourne,Gold Coast,Melbourne - Gold Coast,136.0,202.2857143
+2010,2,201002,Melbourne,Mildura,Melbourne - Mildura,150.0,223.1092437
+2010,2,201002,Melbourne,Perth,Melbourne - Perth,358.0,532.487395
+2010,2,201002,Melbourne,Sydney,Melbourne - Sydney,66.0,98.16806723
+2010,2,201002,Melbourne,Newcastle,Melbourne - Newcastle,150.0,223.1092437
+2010,3,201003,Melbourne,Gold Coast,Melbourne - Gold Coast,186.0,276.6554622
+2010,3,201003,Melbourne,Mildura,Melbourne - Mildura,198.0,294.5042017
+2010,3,201003,Melbourne,Perth,Melbourne - Perth,376.0,559.2605042
+2010,3,201003,Melbourne,Sydney,Melbourne - Sydney,66.0,98.16806723
+2010,3,201003,Melbourne,Newcastle,Melbourne - Newcastle,158.0,235.0084034
+2010,4,201004,Melbourne,Gold Coast,Melbourne - Gold Coast,117.0,172.9352818
+2010,4,201004,Melbourne,Mildura,Melbourne - Mildura,178.0,263.0981211
+2010,4,201004,Melbourne,Perth,Melbourne - Perth,296.0,437.5114823
+2010,4,201004,Melbourne,Sydney,Melbourne - Sydney,57.0,84.25052192
+2010,4,201004,Melbourne,Newcastle,Melbourne - Newcastle,108.0,159.6325678
+2010,5,201005,Melbourne,Gold Coast,Melbourne - Gold Coast,156.0,230.5803758
+2010,5,201005,Melbourne,Mildura,Melbourne - Mildura,198.0,292.6597077
+2010,5,201005,Melbourne,Perth,Melbourne - Perth,126.0,186.2379958
+2010,5,201005,Melbourne,Sydney,Melbourne - Sydney,56.0,82.77244259
+2010,5,201005,Melbourne,Newcastle,Melbourne - Newcastle,144.0,212.8434238
+2010,6,201006,Melbourne,Gold Coast,Melbourne - Gold Coast,128.0,189.1941545
+2010,6,201006,Melbourne,Mildura,Melbourne - Mildura,124.0,183.2818372
+2010,6,201006,Melbourne,Perth,Melbourne - Perth,486.0,718.3465553
+2010,6,201006,Melbourne,Sydney,Melbourne - Sydney,116.0,171.4572025
+2010,6,201006,Melbourne,Newcastle,Melbourne - Newcastle,150.0,221.7118998
+2010,7,201007,Melbourne,Gold Coast,Melbourne - Gold Coast,107.9,158.3278756
+2010,7,201007,Melbourne,Mildura,Melbourne - Mildura,224.27,329.0842694
+2010,7,201007,Melbourne,Perth,Melbourne - Perth,296.0,434.3378238
+2010,7,201007,Melbourne,Sydney,Melbourne - Sydney,56.0,82.17202073
+2010,7,201007,Melbourne,Newcastle,Melbourne - Newcastle,138.0,202.4953368
+2010,8,201008,Melbourne,Gold Coast,Melbourne - Gold Coast,128.74,188.9076062
+2010,8,201008,Melbourne,Mildura,Melbourne - Mildura,197.87,290.3460311
+2010,8,201008,Melbourne,Perth,Melbourne - Perth,277.9,407.7786528
+2010,8,201008,Melbourne,Sydney,Melbourne - Sydney,76.85,112.7664249
+2010,8,201008,Melbourne,Newcastle,Melbourne - Newcastle,108.0,158.4746114
+2010,9,201009,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,261.1896373
+2010,9,201009,Melbourne,Mildura,Melbourne - Mildura,214.0,314.0145078
+2010,9,201009,Melbourne,Perth,Melbourne - Perth,357.9,525.1672539
+2010,9,201009,Melbourne,Sydney,Melbourne - Sydney,87.9,128.9807254
+2010,9,201009,Melbourne,Newcastle,Melbourne - Newcastle,158.0,231.842487
+2010,10,201010,Melbourne,Gold Coast,Melbourne - Gold Coast,197.9,289.1913313
+2010,10,201010,Melbourne,Mildura,Melbourne - Mildura,214.0,312.7182663
+2010,10,201010,Melbourne,Perth,Melbourne - Perth,297.9,435.3213622
+2010,10,201010,Melbourne,Sydney,Melbourne - Sydney,77.9,113.8352941
+2010,10,201010,Melbourne,Newcastle,Melbourne - Newcastle,198.0,289.3374613
+2010,11,201011,Melbourne,Gold Coast,Melbourne - Gold Coast,117.9,172.2873065
+2010,11,201011,Melbourne,Mildura,Melbourne - Mildura,214.0,312.7182663
+2010,11,201011,Melbourne,Perth,Melbourne - Perth,277.9,406.095356
+2010,11,201011,Melbourne,Sydney,Melbourne - Sydney,57.9,84.60928793
+2010,11,201011,Melbourne,Newcastle,Melbourne - Newcastle,138.0,201.6594427
+2010,12,201012,Melbourne,Gold Coast,Melbourne - Gold Coast,197.9,289.1913313
+2010,12,201012,Melbourne,Mildura,Melbourne - Mildura,190.0,277.6470588
+2010,12,201012,Melbourne,Perth,Melbourne - Perth,448.0,654.6625387
+2010,12,201012,Melbourne,Sydney,Melbourne - Sydney,177.9,259.9653251
+2010,12,201012,Melbourne,Newcastle,Melbourne - Newcastle,178.0,260.1114551
+2011,1,201101,Melbourne,Gold Coast,Melbourne - Gold Coast,110.82,159.6349135
+2011,1,201101,Melbourne,Mildura,Melbourne - Mildura,154.0,221.8351984
+2011,1,201101,Melbourne,Perth,Melbourne - Perth,238.46,343.4988403
+2011,1,201101,Melbourne,Sydney,Melbourne - Sydney,66.23,95.40354018
+2011,1,201101,Melbourne,Newcastle,Melbourne - Newcastle,128.0,184.3825025
+2011,2,201102,Melbourne,Gold Coast,Melbourne - Gold Coast,117.9,169.8335707
+2011,2,201102,Melbourne,Mildura,Melbourne - Mildura,170.0,244.8830112
+2011,2,201102,Melbourne,Perth,Melbourne - Perth,247.9,357.0970498
+2011,2,201102,Melbourne,Sydney,Melbourne - Sydney,77.9,112.2140387
+2011,2,201102,Melbourne,Newcastle,Melbourne - Newcastle,158.0,227.5971516
+2011,3,201103,Melbourne,Gold Coast,Melbourne - Gold Coast,147.9,213.0482197
+2011,3,201103,Melbourne,Mildura,Melbourne - Mildura,242.0,348.5981689
+2011,3,201103,Melbourne,Perth,Melbourne - Perth,197.9,285.0726348
+2011,3,201103,Melbourne,Sydney,Melbourne - Sydney,77.9,112.2140387
+2011,3,201103,Melbourne,Newcastle,Melbourne - Newcastle,128.0,184.3825025
+2011,4,201104,Melbourne,Gold Coast,Melbourne - Gold Coast,119.9,171.1475806
+2011,4,201104,Melbourne,Mildura,Melbourne - Mildura,217.67,310.706371
+2011,4,201104,Melbourne,Perth,Melbourne - Perth,299.9,428.0830645
+2011,4,201104,Melbourne,Sydney,Melbourne - Sydney,69.9,99.7766129
+2011,4,201104,Melbourne,Newcastle,Melbourne - Newcastle,148.0,211.2580645
+2011,5,201105,Melbourne,Gold Coast,Melbourne - Gold Coast,119.9,171.1475806
+2011,5,201105,Melbourne,Mildura,Melbourne - Mildura,166.0,236.9516129
+2011,5,201105,Melbourne,Perth,Melbourne - Perth,269.9,385.2604839
+2011,5,201105,Melbourne,Sydney,Melbourne - Sydney,59.9,85.50241935
+2011,5,201105,Melbourne,Newcastle,Melbourne - Newcastle,128.0,182.7096774
+2011,6,201106,Melbourne,Gold Coast,Melbourne - Gold Coast,149.9,213.9701613
+2011,6,201106,Melbourne,Mildura,Melbourne - Mildura,198.0,282.6290323
+2011,6,201106,Melbourne,Perth,Melbourne - Perth,449.9,642.1959677
+2011,6,201106,Melbourne,Sydney,Melbourne - Sydney,89.9,128.325
+2011,6,201106,Melbourne,Newcastle,Melbourne - Newcastle,140.0,199.8387097
+2011,7,201107,Melbourne,Gold Coast,Melbourne - Gold Coast,186.0,263.9038076
+2011,7,201107,Melbourne,Mildura,Melbourne - Mildura,178.0,252.5531062
+2011,7,201107,Melbourne,Perth,Melbourne - Perth,398.0,564.6973948
+2011,7,201107,Melbourne,Sydney,Melbourne - Sydney,148.0,209.987976
+2011,7,201107,Melbourne,Newcastle,Melbourne - Newcastle,138.0,195.7995992
+2011,8,201108,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,266.741483
+2011,8,201108,Melbourne,Mildura,Melbourne - Mildura,198.0,280.9298597
+2011,8,201108,Melbourne,Perth,Melbourne - Perth,398.0,564.6973948
+2011,8,201108,Melbourne,Sydney,Melbourne - Sydney,148.0,209.987976
+2011,8,201108,Melbourne,Newcastle,Melbourne - Newcastle,128.0,181.6112224
+2011,9,201109,Melbourne,Gold Coast,Melbourne - Gold Coast,159.95,226.9430862
+2011,9,201109,Melbourne,Mildura,Melbourne - Mildura,198.0,280.9298597
+2011,9,201109,Melbourne,Perth,Melbourne - Perth,513.0,727.8637275
+2011,9,201109,Melbourne,Sydney,Melbourne - Sydney,99.9,141.7418838
+2011,9,201109,Melbourne,Newcastle,Melbourne - Newcastle,188.0,266.741483
+2011,10,201110,Melbourne,Gold Coast,Melbourne - Gold Coast,139.95,198.5663327
+2011,10,201110,Melbourne,Mildura,Melbourne - Mildura,198.0,280.9298597
+2011,10,201110,Melbourne,Perth,Melbourne - Perth,309.9,439.6977956
+2011,10,201110,Melbourne,Sydney,Melbourne - Sydney,99.9,141.7418838
+2011,10,201110,Melbourne,Newcastle,Melbourne - Newcastle,178.0,252.5531062
+2011,11,201111,Melbourne,Gold Coast,Melbourne - Gold Coast,179.9,255.2488978
+2011,11,201111,Melbourne,Mildura,Melbourne - Mildura,184.0,261.0661323
+2011,11,201111,Melbourne,Perth,Melbourne - Perth,309.9,439.6977956
+2011,11,201111,Melbourne,Sydney,Melbourne - Sydney,99.9,141.7418838
+2011,11,201111,Melbourne,Newcastle,Melbourne - Newcastle,180.0,255.3907816
+2011,12,201112,Melbourne,Gold Coast,Melbourne - Gold Coast,259.9,368.7559118
+2011,12,201112,Melbourne,Mildura,Melbourne - Mildura,225.1,319.3803607
+2011,12,201112,Melbourne,Perth,Melbourne - Perth,459.9,652.5234469
+2011,12,201112,Melbourne,Sydney,Melbourne - Sydney,249.9,354.5675351
+2011,12,201112,Melbourne,Newcastle,Melbourne - Newcastle,168.0,238.3647295
+2012,1,201201,Melbourne,Gold Coast,Melbourne - Gold Coast,158.0,223.951952
+2012,1,201201,Melbourne,Mildura,Melbourne - Mildura,168.0,238.1261261
+2012,1,201201,Melbourne,Perth,Melbourne - Perth,259.9,368.3867868
+2012,1,201201,Melbourne,Sydney,Melbourne - Sydney,99.9,141.6
+2012,1,201201,Melbourne,Newcastle,Melbourne - Newcastle,104.0,147.4114114
+2012,2,201202,Melbourne,Gold Coast,Melbourne - Gold Coast,129.9,184.1225225
+2012,2,201202,Melbourne,Mildura,Melbourne - Mildura,198.0,280.6486486
+2012,2,201202,Melbourne,Perth,Melbourne - Perth,249.9,354.2126126
+2012,2,201202,Melbourne,Sydney,Melbourne - Sydney,99.9,141.6
+2012,2,201202,Melbourne,Newcastle,Melbourne - Newcastle,168.0,238.1261261
+2012,3,201203,Melbourne,Gold Coast,Melbourne - Gold Coast,198.0,280.6486486
+2012,3,201203,Melbourne,Mildura,Melbourne - Mildura,218.0,308.996997
+2012,3,201203,Melbourne,Perth,Melbourne - Perth,349.9,495.9543544
+2012,3,201203,Melbourne,Sydney,Melbourne - Sydney,99.9,141.6
+2012,3,201203,Melbourne,Newcastle,Melbourne - Newcastle,148.0,209.7777778
+2012,4,201204,Melbourne,Gold Coast,Melbourne - Gold Coast,118.0,166.4223108
+2012,4,201204,Melbourne,Mildura,Melbourne - Mildura,225.1,317.4717131
+2012,4,201204,Melbourne,Perth,Melbourne - Perth,329.9,465.2772908
+2012,4,201204,Melbourne,Sydney,Melbourne - Sydney,99.9,140.8948207
+2012,4,201204,Melbourne,Newcastle,Melbourne - Newcastle,118.0,166.4223108
+2012,5,201205,Melbourne,Gold Coast,Melbourne - Gold Coast,89.9,126.7912351
+2012,5,201205,Melbourne,Mildura,Melbourne - Mildura,207.0,291.9442231
+2012,5,201205,Melbourne,Perth,Melbourne - Perth,219.9,310.1378486
+2012,5,201205,Melbourne,Sydney,Melbourne - Sydney,79.9,112.6876494
+2012,5,201205,Melbourne,Newcastle,Melbourne - Newcastle,98.0,138.2151394
+2012,6,201206,Melbourne,Gold Coast,Melbourne - Gold Coast,219.9,310.1378486
+2012,6,201206,Melbourne,Mildura,Melbourne - Mildura,227.71,321.152749
+2012,6,201206,Melbourne,Perth,Melbourne - Perth,389.9,549.8988048
+2012,6,201206,Melbourne,Sydney,Melbourne - Sydney,109.9,154.9984064
+2012,6,201206,Melbourne,Newcastle,Melbourne - Newcastle,128.0,180.5258964
+2012,7,201207,Melbourne,Gold Coast,Melbourne - Gold Coast,158.0,219.7721022
+2012,7,201207,Melbourne,Mildura,Melbourne - Mildura,208.0,289.3202358
+2012,7,201207,Melbourne,Perth,Melbourne - Perth,199.9,278.0534381
+2012,7,201207,Melbourne,Sydney,Melbourne - Sydney,89.9,125.0475442
+2012,7,201207,Melbourne,Newcastle,Melbourne - Newcastle,98.0,136.3143418
+2012,8,201208,Melbourne,Gold Coast,Melbourne - Gold Coast,139.9,194.5956778
+2012,8,201208,Melbourne,Mildura,Melbourne - Mildura,198.0,275.410609
+2012,8,201208,Melbourne,Perth,Melbourne - Perth,245.9,342.037721
+2012,8,201208,Melbourne,Sydney,Melbourne - Sydney,90.0,125.1866405
+2012,8,201208,Melbourne,Newcastle,Melbourne - Newcastle,138.0,191.9528487
+2012,9,201209,Melbourne,Gold Coast,Melbourne - Gold Coast,174.9,243.2793713
+2012,9,201209,Melbourne,Mildura,Melbourne - Mildura,253.0,351.913556
+2012,9,201209,Melbourne,Perth,Melbourne - Perth,250.9,348.9925344
+2012,9,201209,Melbourne,Sydney,Melbourne - Sydney,104.9,145.9119843
+2012,9,201209,Melbourne,Newcastle,Melbourne - Newcastle,108.0,150.2239686
+2012,10,201210,Melbourne,Gold Coast,Melbourne - Gold Coast,169.9,235.8611765
+2012,10,201210,Melbourne,Mildura,Melbourne - Mildura,269.92,374.7124706
+2012,10,201210,Melbourne,Perth,Melbourne - Perth,299.9,416.3317647
+2012,10,201210,Melbourne,Sydney,Melbourne - Sydney,109.9,152.5670588
+2012,10,201210,Melbourne,Newcastle,Melbourne - Newcastle,138.0,191.5764706
+2012,11,201211,Melbourne,Gold Coast,Melbourne - Gold Coast,149.9,208.0964706
+2012,11,201211,Melbourne,Mildura,Melbourne - Mildura,230.32,319.7383529
+2012,11,201211,Melbourne,Perth,Melbourne - Perth,284.9,395.5082353
+2012,11,201211,Melbourne,Sydney,Melbourne - Sydney,99.95,138.7541176
+2012,11,201211,Melbourne,Newcastle,Melbourne - Newcastle,138.0,191.5764706
+2012,12,201212,Melbourne,Gold Coast,Melbourne - Gold Coast,474.9,659.2729412
+2012,12,201212,Melbourne,Mildura,Melbourne - Mildura,232.0,322.0705882
+2012,12,201212,Melbourne,Perth,Melbourne - Perth,508.0,705.2235294
+2012,12,201212,Melbourne,Sydney,Melbourne - Sydney,199.95,277.5776471
+2012,12,201212,Melbourne,Newcastle,Melbourne - Newcastle,178.0,247.1058824
+2013,1,201301,Melbourne,Gold Coast,Melbourne - Gold Coast,159.9,221.1117188
+2013,1,201301,Melbourne,Mildura,Melbourne - Mildura,230.32,318.489375
+2013,1,201301,Melbourne,Perth,Melbourne - Perth,284.9,393.9632813
+2013,1,201301,Melbourne,Sydney,Melbourne - Sydney,90.0,124.453125
+2013,1,201301,Melbourne,Newcastle,Melbourne - Newcastle,148.0,204.65625
+2013,2,201302,Melbourne,Gold Coast,Melbourne - Gold Coast,84.95,117.4699219
+2013,2,201302,Melbourne,Mildura,Melbourne - Mildura,218.0,301.453125
+2013,2,201302,Melbourne,Perth,Melbourne - Perth,284.9,393.9632813
+2013,2,201302,Melbourne,Sydney,Melbourne - Sydney,99.95,138.2121094
+2013,2,201302,Melbourne,Newcastle,Melbourne - Newcastle,168.0,232.3125
+2013,3,201303,Melbourne,Gold Coast,Melbourne - Gold Coast,380.0,525.46875
+2013,3,201303,Melbourne,Mildura,Melbourne - Mildura,243.0,336.0234375
+2013,3,201303,Melbourne,Perth,Melbourne - Perth,415.0,573.8671875
+2013,3,201303,Melbourne,Sydney,Melbourne - Sydney,155.0,214.3359375
+2013,3,201303,Melbourne,Newcastle,Melbourne - Newcastle,114.0,157.640625
+2013,4,201304,Melbourne,Gold Coast,Melbourne - Gold Coast,149.9,206.4770428
+2013,4,201304,Melbourne,Mildura,Melbourne - Mildura,200.0,275.4863813
+2013,4,201304,Melbourne,Perth,Melbourne - Perth,304.9,419.9789883
+2013,4,201304,Melbourne,Sydney,Melbourne - Sydney,94.9,130.7182879
+2013,4,201304,Melbourne,Newcastle,Melbourne - Newcastle,148.0,203.8599222
+2013,5,201305,Melbourne,Gold Coast,Melbourne - Gold Coast,159.9,220.2513619
+2013,5,201305,Melbourne,Mildura,Melbourne - Mildura,187.0,257.5797665
+2013,5,201305,Melbourne,Perth,Melbourne - Perth,239.9,330.4459144
+2013,5,201305,Melbourne,Sydney,Melbourne - Sydney,109.9,151.3797665
+2013,5,201305,Melbourne,Newcastle,Melbourne - Newcastle,134.0,184.5758755
+2013,6,201306,Melbourne,Gold Coast,Melbourne - Gold Coast,179.9,247.8
+2013,6,201306,Melbourne,Mildura,Melbourne - Mildura,198.0,272.7315175
+2013,6,201306,Melbourne,Perth,Melbourne - Perth,299.9,413.0918288
+2013,6,201306,Melbourne,Sydney,Melbourne - Sydney,109.9,151.3797665
+2013,6,201306,Melbourne,Newcastle,Melbourne - Newcastle,118.0,162.536965
+2013,7,201307,Melbourne,Gold Coast,Melbourne - Gold Coast,214.9,292.5946154
+2013,7,201307,Melbourne,Mildura,Melbourne - Mildura,205.0,279.1153846
+2013,7,201307,Melbourne,Perth,Melbourne - Perth,284.9,387.9023077
+2013,7,201307,Melbourne,Sydney,Melbourne - Sydney,214.9,292.5946154
+2013,7,201307,Melbourne,Newcastle,Melbourne - Newcastle,174.0,236.9076923
+2013,8,201308,Melbourne,Gold Coast,Melbourne - Gold Coast,129.9,176.8638462
+2013,8,201308,Melbourne,Mildura,Melbourne - Mildura,198.0,269.5846154
+2013,8,201308,Melbourne,Perth,Melbourne - Perth,304.9,415.1330769
+2013,8,201308,Melbourne,Sydney,Melbourne - Sydney,119.9,163.2484615
+2013,8,201308,Melbourne,Newcastle,Melbourne - Newcastle,168.0,228.7384615
+2013,9,201309,Melbourne,Gold Coast,Melbourne - Gold Coast,218.0,296.8153846
+2013,9,201309,Melbourne,Mildura,Melbourne - Mildura,232.01,315.8905385
+2013,9,201309,Melbourne,Perth,Melbourne - Perth,364.9,496.8253846
+2013,9,201309,Melbourne,Sydney,Melbourne - Sydney,119.9,163.2484615
+2013,9,201309,Melbourne,Newcastle,Melbourne - Newcastle,170.0,231.4615385
+2013,10,201310,Melbourne,Gold Coast,Melbourne - Gold Coast,244.9,330.8954198
+2013,10,201310,Melbourne,Mildura,Melbourne - Mildura,236.0,318.870229
+2013,10,201310,Melbourne,Perth,Melbourne - Perth,244.9,330.8954198
+2013,10,201310,Melbourne,Sydney,Melbourne - Sydney,88.0,118.9007634
+2013,10,201310,Melbourne,Newcastle,Melbourne - Newcastle,164.0,221.5877863
+2013,11,201311,Melbourne,Gold Coast,Melbourne - Gold Coast,149.9,202.5366412
+2013,11,201311,Melbourne,Mildura,Melbourne - Mildura,202.0,272.9312977
+2013,11,201311,Melbourne,Perth,Melbourne - Perth,304.9,411.9641221
+2013,11,201311,Melbourne,Sydney,Melbourne - Sydney,109.9,148.4908397
+2013,11,201311,Melbourne,Newcastle,Melbourne - Newcastle,170.0,229.6946565
+2013,12,201312,Melbourne,Gold Coast,Melbourne - Gold Coast,299.9,405.2083969
+2013,12,201312,Melbourne,Mildura,Melbourne - Mildura,210.01,283.7539695
+2013,12,201312,Melbourne,Perth,Melbourne - Perth,488.0,659.3587786
+2013,12,201312,Melbourne,Sydney,Melbourne - Sydney,204.9,276.8496183
+2013,12,201312,Melbourne,Newcastle,Melbourne - Newcastle,190.0,256.7175573
+2014,1,201401,Melbourne,Gold Coast,Melbourne - Gold Coast,132.9,178.5449715
+2014,1,201401,Melbourne,Mildura,Melbourne - Mildura,210.01,282.1386717
+2014,1,201401,Melbourne,Perth,Melbourne - Perth,274.9,369.31537
+2014,1,201401,Melbourne,Sydney,Melbourne - Sydney,90.51,121.5959772
+2014,1,201401,Melbourne,Newcastle,Melbourne - Newcastle,160.0,214.9525617
+2014,2,201402,Melbourne,Gold Coast,Melbourne - Gold Coast,160.9,216.1616698
+2014,2,201402,Melbourne,Mildura,Melbourne - Mildura,210.01,282.1386717
+2014,2,201402,Melbourne,Perth,Melbourne - Perth,339.9,456.6398482
+2014,2,201402,Melbourne,Sydney,Melbourne - Sydney,120.9,162.4235294
+2014,2,201402,Melbourne,Newcastle,Melbourne - Newcastle,180.0,241.8216319
+2014,3,201403,Melbourne,Gold Coast,Melbourne - Gold Coast,165.9,222.8789374
+2014,3,201403,Melbourne,Mildura,Melbourne - Mildura,230.0,308.9943074
+2014,3,201403,Melbourne,Perth,Melbourne - Perth,287.9,386.7802657
+2014,3,201403,Melbourne,Sydney,Melbourne - Sydney,115.9,155.7062619
+2014,3,201403,Melbourne,Newcastle,Melbourne - Newcastle,200.0,268.6907021
+2014,4,201404,Melbourne,Gold Coast,Melbourne - Gold Coast,152.9,204.4441926
+2014,4,201404,Melbourne,Mildura,Melbourne - Mildura,235.31,314.6354674
+2014,4,201404,Melbourne,Perth,Melbourne - Perth,288.9,386.2912181
+2014,4,201404,Melbourne,Sydney,Melbourne - Sydney,104.9,140.2628895
+2014,4,201404,Melbourne,Newcastle,Melbourne - Newcastle,210.0,280.7932011
+2014,5,201405,Melbourne,Gold Coast,Melbourne - Gold Coast,147.9,197.7586402
+2014,5,201405,Melbourne,Mildura,Melbourne - Mildura,250.0,334.2776204
+2014,5,201405,Melbourne,Perth,Melbourne - Perth,253.9,339.4923513
+2014,5,201405,Melbourne,Sydney,Melbourne - Sydney,91.9,122.8804533
+2014,5,201405,Melbourne,Newcastle,Melbourne - Newcastle,118.0,157.7790368
+2014,6,201406,Melbourne,Gold Coast,Melbourne - Gold Coast,165.9,221.8266289
+2014,6,201406,Melbourne,Mildura,Melbourne - Mildura,250.0,334.2776204
+2014,6,201406,Melbourne,Perth,Melbourne - Perth,295.9,395.6509915
+2014,6,201406,Melbourne,Sydney,Melbourne - Sydney,108.9,145.6113314
+2014,6,201406,Melbourne,Newcastle,Melbourne - Newcastle,150.0,200.5665722
+2014,7,201407,Melbourne,Gold Coast,Melbourne - Gold Coast,140.0,186.3157895
+2014,7,201407,Melbourne,Mildura,Melbourne - Mildura,255.11,339.5072932
+2014,7,201407,Melbourne,Perth,Melbourne - Perth,318.0,423.2030075
+2014,7,201407,Melbourne,Sydney,Melbourne - Sydney,94.0,125.0977444
+2014,7,201407,Melbourne,Newcastle,Melbourne - Newcastle,160.0,212.9323308
+2014,8,201408,Melbourne,Gold Coast,Melbourne - Gold Coast,150.0,199.6240602
+2014,8,201408,Melbourne,Mildura,Melbourne - Mildura,250.0,332.7067669
+2014,8,201408,Melbourne,Perth,Melbourne - Perth,348.0,463.1278195
+2014,8,201408,Melbourne,Sydney,Melbourne - Sydney,98.0,130.4210526
+2014,8,201408,Melbourne,Newcastle,Melbourne - Newcastle,160.0,212.9323308
+2014,9,201409,Melbourne,Gold Coast,Melbourne - Gold Coast,180.0,239.5488722
+2014,9,201409,Melbourne,Mildura,Melbourne - Mildura,250.0,332.7067669
+2014,9,201409,Melbourne,Perth,Melbourne - Perth,298.0,396.5864662
+2014,9,201409,Melbourne,Sydney,Melbourne - Sydney,98.0,130.4210526
+2014,9,201409,Melbourne,Newcastle,Melbourne - Newcastle,150.0,199.6240602
+2014,10,201410,Melbourne,Gold Coast,Melbourne - Gold Coast,224.0,297.5459662
+2014,10,201410,Melbourne,Mildura,Melbourne - Mildura,238.0,316.1425891
+2014,10,201410,Melbourne,Perth,Melbourne - Perth,338.0,448.9756098
+2014,10,201410,Melbourne,Sydney,Melbourne - Sydney,90.0,119.5497186
+2014,10,201410,Melbourne,Newcastle,Melbourne - Newcastle,140.0,185.9662289
+2014,11,201411,Melbourne,Gold Coast,Melbourne - Gold Coast,284.0,377.2457786
+2014,11,201411,Melbourne,Mildura,Melbourne - Mildura,238.0,316.1425891
+2014,11,201411,Melbourne,Perth,Melbourne - Perth,298.0,395.8424015
+2014,11,201411,Melbourne,Sydney,Melbourne - Sydney,120.0,159.3996248
+2014,11,201411,Melbourne,Newcastle,Melbourne - Newcastle,154.0,204.5628518
+2014,12,201412,Melbourne,Gold Coast,Melbourne - Gold Coast,260.0,345.3658537
+2014,12,201412,Melbourne,Mildura,Melbourne - Mildura,238.0,316.1425891
+2014,12,201412,Melbourne,Perth,Melbourne - Perth,394.0,523.3621013
+2014,12,201412,Melbourne,Sydney,Melbourne - Sydney,160.0,212.532833
+2014,12,201412,Melbourne,Newcastle,Melbourne - Newcastle,178.0,236.4427767
+2015,1,201501,Melbourne,Gold Coast,Melbourne - Gold Coast,160.0,212.1348315
+2015,1,201501,Melbourne,Mildura,Melbourne - Mildura,238.0,315.5505618
+2015,1,201501,Melbourne,Perth,Melbourne - Perth,334.0,442.8314607
+2015,1,201501,Melbourne,Sydney,Melbourne - Sydney,118.0,156.4494382
+2015,1,201501,Melbourne,Newcastle,Melbourne - Newcastle,154.0,204.1797753
+2015,2,201502,Melbourne,Gold Coast,Melbourne - Gold Coast,180.0,238.6516854
+2015,2,201502,Melbourne,Mildura,Melbourne - Mildura,238.0,315.5505618
+2015,2,201502,Melbourne,Perth,Melbourne - Perth,378.0,501.1685393
+2015,2,201502,Melbourne,Sydney,Melbourne - Sydney,148.0,196.2247191
+2015,2,201502,Melbourne,Newcastle,Melbourne - Newcastle,184.0,243.9550562
+2015,3,201503,Melbourne,Gold Coast,Melbourne - Gold Coast,248.0,328.8089888
+2015,3,201503,Melbourne,Mildura,Melbourne - Mildura,255.93,339.3229213
+2015,3,201503,Melbourne,Perth,Melbourne - Perth,338.0,448.1348315
+2015,3,201503,Melbourne,Sydney,Melbourne - Sydney,128.0,169.7078652
+2015,3,201503,Melbourne,Newcastle,Melbourne - Newcastle,164.0,217.4382022
+2015,4,201504,Melbourne,Gold Coast,Melbourne - Gold Coast,158.0,208.1190698
+2015,4,201504,Melbourne,Mildura,Melbourne - Mildura,234.0,308.2269767
+2015,4,201504,Melbourne,Perth,Melbourne - Perth,258.0,339.84
+2015,4,201504,Melbourne,Sydney,Melbourne - Sydney,118.0,155.4306977
+2015,4,201504,Melbourne,Newcastle,Melbourne - Newcastle,118.0,155.4306977
+2015,5,201505,Melbourne,Gold Coast,Melbourne - Gold Coast,150.0,197.5813953
+2015,5,201505,Melbourne,Mildura,Melbourne - Mildura,250.0,329.3023256
+2015,5,201505,Melbourne,Perth,Melbourne - Perth,294.0,387.2595349
+2015,5,201505,Melbourne,Sydney,Melbourne - Sydney,98.0,129.0865116
+2015,5,201505,Melbourne,Newcastle,Melbourne - Newcastle,154.0,202.8502326
+2015,6,201506,Melbourne,Gold Coast,Melbourne - Gold Coast,220.0,289.7860465
+2015,6,201506,Melbourne,Mildura,Melbourne - Mildura,250.0,329.3023256
+2015,6,201506,Melbourne,Perth,Melbourne - Perth,310.0,408.3348837
+2015,6,201506,Melbourne,Sydney,Melbourne - Sydney,118.0,155.4306977
+2015,6,201506,Melbourne,Newcastle,Melbourne - Newcastle,154.0,202.8502326
+2015,7,201507,Melbourne,Gold Coast,Melbourne - Gold Coast,164.0,215.0222222
+2015,7,201507,Melbourne,Mildura,Melbourne - Mildura,250.0,327.7777778
+2015,7,201507,Melbourne,Perth,Melbourne - Perth,320.0,419.5555556
+2015,7,201507,Melbourne,Sydney,Melbourne - Sydney,118.0,154.7111111
+2015,7,201507,Melbourne,Newcastle,Melbourne - Newcastle,154.0,201.9111111
+2015,8,201508,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,246.4888889
+2015,8,201508,Melbourne,Mildura,Melbourne - Mildura,250.0,327.7777778
+2015,8,201508,Melbourne,Perth,Melbourne - Perth,334.0,437.9111111
+2015,8,201508,Melbourne,Sydney,Melbourne - Sydney,150.0,196.6666667
+2015,8,201508,Melbourne,Newcastle,Melbourne - Newcastle,138.0,180.9333333
+2015,9,201509,Melbourne,Gold Coast,Melbourne - Gold Coast,214.0,280.5777778
+2015,9,201509,Melbourne,Mildura,Melbourne - Mildura,250.0,327.7777778
+2015,9,201509,Melbourne,Perth,Melbourne - Perth,310.0,406.4444444
+2015,9,201509,Melbourne,Sydney,Melbourne - Sydney,124.0,162.5777778
+2015,9,201509,Melbourne,Newcastle,Melbourne - Newcastle,154.0,201.9111111
+2015,10,201510,Melbourne,Gold Coast,Melbourne - Gold Coast,238.0,310.8929889
+2015,10,201510,Melbourne,Mildura,Melbourne - Mildura,250.0,326.5682657
+2015,10,201510,Melbourne,Perth,Melbourne - Perth,310.0,404.9446494
+2015,10,201510,Melbourne,Sydney,Melbourne - Sydney,140.0,182.8782288
+2015,10,201510,Melbourne,Newcastle,Melbourne - Newcastle,200.0,261.2546125
+2015,11,201511,Melbourne,Gold Coast,Melbourne - Gold Coast,198.0,258.6420664
+2015,11,201511,Melbourne,Mildura,Melbourne - Mildura,250.0,326.5682657
+2015,11,201511,Melbourne,Perth,Melbourne - Perth,300.0,391.8819188
+2015,11,201511,Melbourne,Sydney,Melbourne - Sydney,140.0,182.8782288
+2015,11,201511,Melbourne,Newcastle,Melbourne - Newcastle,164.0,214.2287823
+2015,12,201512,Melbourne,Gold Coast,Melbourne - Gold Coast,164.0,214.2287823
+2015,12,201512,Melbourne,Mildura,Melbourne - Mildura,250.0,326.5682657
+2015,12,201512,Melbourne,Perth,Melbourne - Perth,280.0,365.7564576
+2015,12,201512,Melbourne,Sydney,Melbourne - Sydney,144.0,188.103321
+2015,12,201512,Melbourne,Newcastle,Melbourne - Newcastle,128.0,167.202952
+2016,1,201601,Melbourne,Gold Coast,Melbourne - Gold Coast,138.0,180.5988909
+2016,1,201601,Melbourne,Mildura,Melbourne - Mildura,240.0,314.0850277
+2016,1,201601,Melbourne,Perth,Melbourne - Perth,330.0,431.8669131
+2016,1,201601,Melbourne,Sydney,Melbourne - Sydney,114.0,149.1903882
+2016,1,201601,Melbourne,Newcastle,Melbourne - Newcastle,174.0,227.7116451
+2016,2,201602,Melbourne,Gold Coast,Melbourne - Gold Coast,184.0,240.7985213
+2016,2,201602,Melbourne,Mildura,Melbourne - Mildura,230.0,300.9981516
+2016,2,201602,Melbourne,Perth,Melbourne - Perth,340.0,444.9537893
+2016,2,201602,Melbourne,Sydney,Melbourne - Sydney,118.0,154.4251386
+2016,2,201602,Melbourne,Newcastle,Melbourne - Newcastle,180.0,235.5637708
+2016,3,201603,Melbourne,Gold Coast,Melbourne - Gold Coast,158.0,206.7726433
+2016,3,201603,Melbourne,Mildura,Melbourne - Mildura,230.0,300.9981516
+2016,3,201603,Melbourne,Perth,Melbourne - Perth,330.0,431.8669131
+2016,3,201603,Melbourne,Sydney,Melbourne - Sydney,124.0,162.2772643
+2016,3,201603,Melbourne,Newcastle,Melbourne - Newcastle,164.0,214.6247689
+2016,4,201604,Melbourne,Gold Coast,Melbourne - Gold Coast,164.0,213.8342541
+2016,4,201604,Melbourne,Mildura,Melbourne - Mildura,238.0,310.320442
+2016,4,201604,Melbourne,Perth,Melbourne - Perth,340.0,443.3149171
+2016,4,201604,Melbourne,Sydney,Melbourne - Sydney,114.0,148.640884
+2016,4,201604,Melbourne,Newcastle,Melbourne - Newcastle,180.0,234.6961326
+2016,5,201605,Melbourne,Gold Coast,Melbourne - Gold Coast,170.0,221.6574586
+2016,5,201605,Melbourne,Mildura,Melbourne - Mildura,238.0,310.320442
+2016,5,201605,Melbourne,Perth,Melbourne - Perth,300.0,391.160221
+2016,5,201605,Melbourne,Sydney,Melbourne - Sydney,110.0,143.4254144
+2016,5,201605,Melbourne,Newcastle,Melbourne - Newcastle,140.0,182.5414365
+2016,6,201606,Melbourne,Gold Coast,Melbourne - Gold Coast,168.0,219.0497238
+2016,6,201606,Melbourne,Mildura,Melbourne - Mildura,250.0,325.9668508
+2016,6,201606,Melbourne,Perth,Melbourne - Perth,320.0,417.2375691
+2016,6,201606,Melbourne,Sydney,Melbourne - Sydney,120.0,156.4640884
+2016,6,201606,Melbourne,Newcastle,Melbourne - Newcastle,170.0,221.6574586
+2016,7,201607,Melbourne,Gold Coast,Melbourne - Gold Coast,168.0,217.4478976
+2016,7,201607,Melbourne,Mildura,Melbourne - Mildura,250.0,323.583181
+2016,7,201607,Melbourne,Perth,Melbourne - Perth,320.0,414.1864717
+2016,7,201607,Melbourne,Sydney,Melbourne - Sydney,124.0,160.4972578
+2016,7,201607,Melbourne,Newcastle,Melbourne - Newcastle,140.0,181.2065814
+2016,8,201608,Melbourne,Gold Coast,Melbourne - Gold Coast,174.0,225.213894
+2016,8,201608,Melbourne,Mildura,Melbourne - Mildura,250.0,323.583181
+2016,8,201608,Melbourne,Perth,Melbourne - Perth,300.0,388.2998172
+2016,8,201608,Melbourne,Sydney,Melbourne - Sydney,124.0,160.4972578
+2016,8,201608,Melbourne,Newcastle,Melbourne - Newcastle,140.0,181.2065814
+2016,9,201609,Melbourne,Gold Coast,Melbourne - Gold Coast,184.0,238.1572212
+2016,9,201609,Melbourne,Mildura,Melbourne - Mildura,250.0,323.583181
+2016,9,201609,Melbourne,Perth,Melbourne - Perth,340.0,440.0731261
+2016,9,201609,Melbourne,Sydney,Melbourne - Sydney,168.0,217.4478976
+2016,9,201609,Melbourne,Newcastle,Melbourne - Newcastle,170.0,220.0365631
+2016,10,201610,Melbourne,Gold Coast,Melbourne - Gold Coast,228.0,293.4981818
+2016,10,201610,Melbourne,Mildura,Melbourne - Mildura,250.0,321.8181818
+2016,10,201610,Melbourne,Perth,Melbourne - Perth,338.0,435.0981818
+2016,10,201610,Melbourne,Sydney,Melbourne - Sydney,118.0,151.8981818
+2016,10,201610,Melbourne,Newcastle,Melbourne - Newcastle,150.0,193.0909091
+2016,11,201611,Melbourne,Gold Coast,Melbourne - Gold Coast,278.0,357.8618182
+2016,11,201611,Melbourne,Mildura,Melbourne - Mildura,250.0,321.8181818
+2016,11,201611,Melbourne,Perth,Melbourne - Perth,358.0,460.8436364
+2016,11,201611,Melbourne,Sydney,Melbourne - Sydney,148.0,190.5163636
+2016,11,201611,Melbourne,Newcastle,Melbourne - Newcastle,160.0,205.9636364
+2016,12,201612,Melbourne,Gold Coast,Melbourne - Gold Coast,268.0,344.9890909
+2016,12,201612,Melbourne,Mildura,Melbourne - Mildura,270.09,347.6794909
+2016,12,201612,Melbourne,Perth,Melbourne - Perth,404.0,520.0581818
+2016,12,201612,Melbourne,Sydney,Melbourne - Sydney,358.0,460.8436364
+2016,12,201612,Melbourne,Newcastle,Melbourne - Newcastle,140.0,180.2181818
+2017,1,201701,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,240.9122172
+2017,1,201701,Melbourne,Mildura,Melbourne - Mildura,250.0,320.361991
+2017,1,201701,Melbourne,Perth,Melbourne - Perth,338.0,433.1294118
+2017,1,201701,Melbourne,Sydney,Melbourne - Sydney,128.0,164.0253394
+2017,1,201701,Melbourne,Newcastle,Melbourne - Newcastle,150.0,192.2171946
+2017,2,201702,Melbourne,Gold Coast,Melbourne - Gold Coast,148.0,189.6542986
+2017,2,201702,Melbourne,Mildura,Melbourne - Mildura,240.0,307.5475113
+2017,2,201702,Melbourne,Perth,Melbourne - Perth,348.0,445.9438914
+2017,2,201702,Melbourne,Sydney,Melbourne - Sydney,138.0,176.839819
+2017,2,201702,Melbourne,Newcastle,Melbourne - Newcastle,140.0,179.4027149
+2017,3,201703,Melbourne,Gold Coast,Melbourne - Gold Coast,198.0,253.7266968
+2017,3,201703,Melbourne,Mildura,Melbourne - Mildura,240.01,307.5603258
+2017,3,201703,Melbourne,Perth,Melbourne - Perth,338.0,433.1294118
+2017,3,201703,Melbourne,Sydney,Melbourne - Sydney,204.0,261.4153846
+2017,3,201703,Melbourne,Newcastle,Melbourne - Newcastle,150.0,192.2171946
+2017,4,201704,Melbourne,Gold Coast,Melbourne - Gold Coast,158.0,202.102981
+2017,4,201704,Melbourne,Mildura,Melbourne - Mildura,240.01,307.0046612
+2017,4,201704,Melbourne,Perth,Melbourne - Perth,408.0,521.8861789
+2017,4,201704,Melbourne,Sydney,Melbourne - Sydney,138.0,176.5203252
+2017,4,201704,Melbourne,Newcastle,Melbourne - Newcastle,130.0,166.2872629
+2017,5,201705,Melbourne,Gold Coast,Melbourne - Gold Coast,168.0,214.8943089
+2017,5,201705,Melbourne,Mildura,Melbourne - Mildura,240.01,307.0046612
+2017,5,201705,Melbourne,Perth,Melbourne - Perth,314.0,401.6476965
+2017,5,201705,Melbourne,Sydney,Melbourne - Sydney,208.0,266.0596206
+2017,5,201705,Melbourne,Newcastle,Melbourne - Newcastle,244.01,312.1211924
+2017,6,201706,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,266.0596206
+2017,6,201706,Melbourne,Mildura,Melbourne - Mildura,222.01,283.980271
+2017,6,201706,Melbourne,Perth,Melbourne - Perth,338.0,432.3468835
+2017,6,201706,Melbourne,Sydney,Melbourne - Sydney,138.0,176.5203252
+2017,6,201706,Melbourne,Newcastle,Melbourne - Newcastle,130.0,166.2872629
+2017,7,201707,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,226.2549372
+2017,7,201707,Melbourne,Mildura,Melbourne - Mildura,230.02,292.377307
+2017,7,201707,Melbourne,Perth,Melbourne - Perth,318.0,404.2082585
+2017,7,201707,Melbourne,Sydney,Melbourne - Sydney,138.0,175.4111311
+2017,7,201707,Melbourne,Newcastle,Melbourne - Newcastle,130.0,165.2423698
+2017,8,201708,Melbourne,Gold Coast,Melbourne - Gold Coast,130.0,165.2423698
+2017,8,201708,Melbourne,Mildura,Melbourne - Mildura,243.01,308.888833
+2017,8,201708,Melbourne,Perth,Melbourne - Perth,308.0,391.497307
+2017,8,201708,Melbourne,Sydney,Melbourne - Sydney,110.0,139.8204668
+2017,8,201708,Melbourne,Newcastle,Melbourne - Newcastle,120.0,152.5314183
+2017,9,201709,Melbourne,Gold Coast,Melbourne - Gold Coast,198.0,251.6768402
+2017,9,201709,Melbourne,Mildura,Melbourne - Mildura,230.02,292.377307
+2017,9,201709,Melbourne,Perth,Melbourne - Perth,358.0,455.0520646
+2017,9,201709,Melbourne,Sydney,Melbourne - Sydney,158.0,200.8330341
+2017,9,201709,Melbourne,Newcastle,Melbourne - Newcastle,160.0,203.3752244
+2017,10,201710,Melbourne,Gold Coast,Melbourne - Gold Coast,238.0,300.6315789
+2017,10,201710,Melbourne,Mildura,Melbourne - Mildura,228.0,288.0
+2017,10,201710,Melbourne,Perth,Melbourne - Perth,328.0,414.3157895
+2017,10,201710,Melbourne,Sydney,Melbourne - Sydney,138.0,174.3157895
+2017,10,201710,Melbourne,Newcastle,Melbourne - Newcastle,154.0,194.5263158
+2017,11,201711,Melbourne,Gold Coast,Melbourne - Gold Coast,168.0,212.2105263
+2017,11,201711,Melbourne,Mildura,Melbourne - Mildura,238.0,300.6315789
+2017,11,201711,Melbourne,Perth,Melbourne - Perth,358.0,452.2105263
+2017,11,201711,Melbourne,Sydney,Melbourne - Sydney,128.0,161.6842105
+2017,11,201711,Melbourne,Newcastle,Melbourne - Newcastle,180.0,227.3684211
+2017,12,201712,Melbourne,Gold Coast,Melbourne - Gold Coast,374.0,472.4210526
+2017,12,201712,Melbourne,Mildura,Melbourne - Mildura,253.0,319.5789474
+2017,12,201712,Melbourne,Perth,Melbourne - Perth,498.0,629.0526316
+2017,12,201712,Melbourne,Sydney,Melbourne - Sydney,288.0,363.7894737
+2017,12,201712,Melbourne,Newcastle,Melbourne - Newcastle,218.0,275.3684211
+2018,1,201801,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,223.8436945
+2018,1,201801,Melbourne,Mildura,Melbourne - Mildura,244.0,306.8419183
+2018,1,201801,Melbourne,Perth,Melbourne - Perth,378.0,475.3534636
+2018,1,201801,Melbourne,Sydney,Melbourne - Sydney,128.0,160.9662522
+2018,1,201801,Melbourne,Newcastle,Melbourne - Newcastle,150.0,188.6323268
+2018,2,201802,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,236.4191829
+2018,2,201802,Melbourne,Mildura,Melbourne - Mildura,256.0,321.9325044
+2018,2,201802,Melbourne,Perth,Melbourne - Perth,348.0,437.6269982
+2018,2,201802,Melbourne,Sydney,Melbourne - Sydney,148.0,186.1172291
+2018,2,201802,Melbourne,Newcastle,Melbourne - Newcastle,180.0,226.3587922
+2018,3,201803,Melbourne,Gold Coast,Melbourne - Gold Coast,353.0,443.9147425
+2018,3,201803,Melbourne,Mildura,Melbourne - Mildura,281.0,353.3712256
+2018,3,201803,Melbourne,Perth,Melbourne - Perth,535.0,672.7886323
+2018,3,201803,Melbourne,Sydney,Melbourne - Sydney,205.9,258.9293073
+2018,3,201803,Melbourne,Newcastle,Melbourne - Newcastle,180.0,226.3587922
+2018,4,201804,Melbourne,Gold Coast,Melbourne - Gold Coast,172.0,215.5327434
+2018,4,201804,Melbourne,Mildura,Melbourne - Mildura,277.28,347.4588319
+2018,4,201804,Melbourne,Perth,Melbourne - Perth,409.9,513.6446018
+2018,4,201804,Melbourne,Sydney,Melbourne - Sydney,138.9,174.0552212
+2018,4,201804,Melbourne,Townsville,Melbourne - Townsville,197.9,247.9879646
+2018,4,201804,Melbourne,Newcastle,Melbourne - Newcastle,150.0,187.9646018
+2018,5,201805,Melbourne,Gold Coast,Melbourne - Gold Coast,197.0,246.860177
+2018,5,201805,Melbourne,Mildura,Melbourne - Mildura,250.0,313.2743363
+2018,5,201805,Melbourne,Perth,Melbourne - Perth,359.9,450.9897345
+2018,5,201805,Melbourne,Sydney,Melbourne - Sydney,138.9,174.0552212
+2018,5,201805,Melbourne,Townsville,Melbourne - Townsville,177.9,222.9260177
+2018,5,201805,Melbourne,Newcastle,Melbourne - Newcastle,120.0,150.3716814
+2018,6,201806,Melbourne,Gold Coast,Melbourne - Gold Coast,289.9,363.2729204
+2018,6,201806,Melbourne,Mildura,Melbourne - Mildura,254.0,318.2867257
+2018,6,201806,Melbourne,Perth,Melbourne - Perth,463.0,580.1840708
+2018,6,201806,Melbourne,Sydney,Melbourne - Sydney,154.0,192.9769912
+2018,6,201806,Melbourne,Townsville,Melbourne - Townsville,494.9,620.1578761
+2018,6,201806,Melbourne,Newcastle,Melbourne - Newcastle,123.0,154.1309735
+2018,7,201807,Melbourne,Gold Coast,Melbourne - Gold Coast,168.9,210.7157709
+2018,7,201807,Melbourne,Mildura,Melbourne - Mildura,254.0,316.8845815
+2018,7,201807,Melbourne,Perth,Melbourne - Perth,369.9,461.4787665
+2018,7,201807,Melbourne,Sydney,Melbourne - Sydney,128.9,160.8126872
+2018,7,201807,Melbourne,Townsville,Melbourne - Townsville,386.0,481.5647577
+2018,7,201807,Melbourne,Newcastle,Melbourne - Newcastle,123.0,153.4519824
+2018,8,201808,Melbourne,Gold Coast,Melbourne - Gold Coast,178.9,223.1915419
+2018,8,201808,Melbourne,Mildura,Melbourne - Mildura,254.0,316.8845815
+2018,8,201808,Melbourne,Perth,Melbourne - Perth,444.0,553.9242291
+2018,8,201808,Melbourne,Sydney,Melbourne - Sydney,142.0,177.1559471
+2018,8,201808,Melbourne,Townsville,Melbourne - Townsville,401.0,500.2784141
+2018,8,201808,Melbourne,Newcastle,Melbourne - Newcastle,143.0,178.4035242
+2018,9,201809,Melbourne,Gold Coast,Melbourne - Gold Coast,378.9,472.7069604
+2018,9,201809,Melbourne,Mildura,Melbourne - Mildura,254.0,316.8845815
+2018,9,201809,Melbourne,Perth,Melbourne - Perth,449.9,561.2849339
+2018,9,201809,Melbourne,Sydney,Melbourne - Sydney,160.9,200.7351542
+2018,9,201809,Melbourne,Townsville,Melbourne - Townsville,536.0,668.7013216
+2018,9,201809,Melbourne,Newcastle,Melbourne - Newcastle,143.0,178.4035242
+2018,10,201810,Melbourne,Gold Coast,Melbourne - Gold Coast,239.9,297.7198948
+2018,10,201810,Melbourne,Mildura,Melbourne - Mildura,254.0,315.2182296
+2018,10,201810,Melbourne,Perth,Melbourne - Perth,399.9,496.2825592
+2018,10,201810,Melbourne,Sydney,Melbourne - Sydney,142.0,176.2243646
+2018,10,201810,Melbourne,Townsville,Melbourne - Townsville,411.0,510.057844
+2018,10,201810,Melbourne,Newcastle,Melbourne - Newcastle,237.0,294.1209465
+2018,11,201811,Melbourne,Gold Coast,Melbourne - Gold Coast,159.9,198.4385627
+2018,11,201811,Melbourne,Mildura,Melbourne - Mildura,254.0,315.2182296
+2018,11,201811,Melbourne,Perth,Melbourne - Perth,379.9,471.4622261
+2018,11,201811,Melbourne,Sydney,Melbourne - Sydney,160.9,199.6795793
+2018,11,201811,Melbourne,Townsville,Melbourne - Townsville,397.0,492.6836109
+2018,11,201811,Melbourne,Newcastle,Melbourne - Newcastle,171.0,212.2138475
+2018,12,201812,Melbourne,Gold Coast,Melbourne - Gold Coast,406.0,503.8527607
+2018,12,201812,Melbourne,Mildura,Melbourne - Mildura,301.18,373.7693953
+2018,12,201812,Melbourne,Perth,Melbourne - Perth,603.9,749.4499562
+2018,12,201812,Melbourne,Sydney,Melbourne - Sydney,308.9,383.3500438
+2018,12,201812,Melbourne,Townsville,Melbourne - Townsville,446.0,553.4934268
+2018,12,201812,Melbourne,Newcastle,Melbourne - Newcastle,223.0,276.7467134
+2019,1,201901,Melbourne,Gold Coast,Melbourne - Gold Coast,169.9,210.8487292
+2019,1,201901,Melbourne,Mildura,Melbourne - Mildura,274.02,340.063383
+2019,1,201901,Melbourne,Perth,Melbourne - Perth,359.9,446.6418931
+2019,1,201901,Melbourne,Sydney,Melbourne - Sydney,139.0,172.5013146
+2019,1,201901,Melbourne,Townsville,Melbourne - Townsville,505.0,626.7134093
+2019,1,201901,Melbourne,Newcastle,Melbourne - Newcastle,160.0,198.5626643
+2019,2,201902,Melbourne,Gold Coast,Melbourne - Gold Coast,169.9,210.8487292
+2019,2,201902,Melbourne,Mildura,Melbourne - Mildura,252.02,312.7610167
+2019,2,201902,Melbourne,Perth,Melbourne - Perth,332.0,412.0175285
+2019,2,201902,Melbourne,Sydney,Melbourne - Sydney,180.9,224.4999124
+2019,2,201902,Melbourne,Townsville,Melbourne - Townsville,431.0,534.878177
+2019,2,201902,Melbourne,Newcastle,Melbourne - Newcastle,251.0,311.4951797
+2019,3,201903,Melbourne,Gold Coast,Melbourne - Gold Coast,199.9,248.0792287
+2019,3,201903,Melbourne,Mildura,Melbourne - Mildura,274.02,340.063383
+2019,3,201903,Melbourne,Perth,Melbourne - Perth,339.9,421.82156
+2019,3,201903,Melbourne,Sydney,Melbourne - Sydney,141.0,174.9833479
+2019,3,201903,Melbourne,Townsville,Melbourne - Townsville,350.0,434.3558282
+2019,3,201903,Melbourne,Newcastle,Melbourne - Newcastle,208.0,258.1314636
+2019,4,201904,Melbourne,Gold Coast,Melbourne - Gold Coast,159.9,197.2285714
+2019,4,201904,Melbourne,Mildura,Melbourne - Mildura,289.0,356.466899
+2019,4,201904,Melbourne,Perth,Melbourne - Perth,499.9,616.6013937
+2019,4,201904,Melbourne,Sydney,Melbourne - Sydney,183.9,226.8313589
+2019,4,201904,Melbourne,Townsville,Melbourne - Townsville,322.0,397.1707317
+2019,4,201904,Melbourne,Newcastle,Melbourne - Newcastle,154.0,189.9512195
+2019,5,201905,Melbourne,Gold Coast,Melbourne - Gold Coast,175.0,215.8536585
+2019,5,201905,Melbourne,Mildura,Melbourne - Mildura,256.0,315.7630662
+2019,5,201905,Melbourne,Perth,Melbourne - Perth,273.9,337.8418118
+2019,5,201905,Melbourne,Sydney,Melbourne - Sydney,124.9,154.0578397
+2019,5,201905,Melbourne,Townsville,Melbourne - Townsville,228.0,281.2264808
+2019,5,201905,Melbourne,Newcastle,Melbourne - Newcastle,104.0,128.2787456
+2019,6,201906,Melbourne,Gold Coast,Melbourne - Gold Coast,229.9,283.5700348
+2019,6,201906,Melbourne,Mildura,Melbourne - Mildura,256.0,315.7630662
+2019,6,201906,Melbourne,Perth,Melbourne - Perth,419.9,517.9254355
+2019,6,201906,Melbourne,Sydney,Melbourne - Sydney,148.0,182.5505226
+2019,6,201906,Melbourne,Townsville,Melbourne - Townsville,488.0,601.9233449
+2019,6,201906,Melbourne,Newcastle,Melbourne - Newcastle,144.0,177.6167247
+2019,7,201907,Melbourne,Gold Coast,Melbourne - Gold Coast,161.9,198.6571924
+2019,7,201907,Melbourne,Mildura,Melbourne - Mildura,256.0,314.1213172
+2019,7,201907,Melbourne,Perth,Melbourne - Perth,304.9,374.1233969
+2019,7,201907,Melbourne,Sydney,Melbourne - Sydney,124.9,153.2568458
+2019,7,201907,Melbourne,Townsville,Melbourne - Townsville,390.0,478.5441941
+2019,7,201907,Melbourne,Newcastle,Melbourne - Newcastle,146.0,179.1473137
+2019,8,201908,Melbourne,Gold Coast,Melbourne - Gold Coast,173.9,213.3816291
+2019,8,201908,Melbourne,Mildura,Melbourne - Mildura,256.0,314.1213172
+2019,8,201908,Melbourne,Perth,Melbourne - Perth,349.9,429.3400347
+2019,8,201908,Melbourne,Sydney,Melbourne - Sydney,133.9,164.3001733
+2019,8,201908,Melbourne,Townsville,Melbourne - Townsville,437.0,536.2149047
+2019,8,201908,Melbourne,Newcastle,Melbourne - Newcastle,192.0,235.5909879
+2019,9,201909,Melbourne,Gold Coast,Melbourne - Gold Coast,259.9,318.9067591
+2019,9,201909,Melbourne,Mildura,Melbourne - Mildura,256.0,314.1213172
+2019,9,201909,Melbourne,Perth,Melbourne - Perth,399.9,490.6918544
+2019,9,201909,Melbourne,Sydney,Melbourne - Sydney,160.9,197.430156
+2019,9,201909,Melbourne,Townsville,Melbourne - Townsville,611.0,749.7192374
+2019,9,201909,Melbourne,Newcastle,Melbourne - Newcastle,198.0,242.9532062
+2019,10,201910,Melbourne,Gold Coast,Melbourne - Gold Coast,238.9,291.1208262
+2019,10,201910,Melbourne,Mildura,Melbourne - Mildura,256.0,311.9586919
+2019,10,201910,Melbourne,Perth,Melbourne - Perth,354.0,431.3803787
+2019,10,201910,Melbourne,Sydney,Melbourne - Sydney,148.9,181.4478485
+2019,10,201910,Melbourne,Townsville,Melbourne - Townsville,430.0,523.9931153
+2019,10,201910,Melbourne,Newcastle,Melbourne - Newcastle,225.0,274.1824441
+2019,11,201911,Melbourne,Gold Coast,Melbourne - Gold Coast,188.9,230.1913941
+2019,11,201911,Melbourne,Mildura,Melbourne - Mildura,256.01,311.9708778
+2019,11,201911,Melbourne,Perth,Melbourne - Perth,391.9,477.5648881
+2019,11,201911,Melbourne,Sydney,Melbourne - Sydney,153.9,187.5407917
+2019,11,201911,Melbourne,Townsville,Melbourne - Townsville,399.0,486.2168675
+2019,11,201911,Melbourne,Newcastle,Melbourne - Newcastle,254.0,309.5215146
+2019,12,201912,Melbourne,Gold Coast,Melbourne - Gold Coast,464.0,565.4251291
+2019,12,201912,Melbourne,Mildura,Melbourne - Mildura,270.0,329.0189329
+2019,12,201912,Melbourne,Perth,Melbourne - Perth,658.0,801.8313253
+2019,12,201912,Melbourne,Sydney,Melbourne - Sydney,256.0,311.9586919
+2019,12,201912,Melbourne,Townsville,Melbourne - Townsville,497.0,605.6385542
+2019,12,201912,Melbourne,Newcastle,Melbourne - Newcastle,278.0,338.767642
+2020,1,202001,Melbourne,Gold Coast,Melbourne - Gold Coast,189.0,229.5231561
+2020,1,202001,Melbourne,Mildura,Melbourne - Mildura,210.0,255.025729
+2020,1,202001,Melbourne,Perth,Melbourne - Perth,390.0,473.619211
+2020,1,202001,Melbourne,Sydney,Melbourne - Sydney,156.0,189.4476844
+2020,1,202001,Melbourne,Townsville,Melbourne - Townsville,362.0,439.6157804
+2020,1,202001,Melbourne,Newcastle,Melbourne - Newcastle,157.0,190.6620926
+2020,2,202002,Melbourne,Gold Coast,Melbourne - Gold Coast,190.0,230.7375643
+2020,2,202002,Melbourne,Mildura,Melbourne - Mildura,290.0,352.1783877
+2020,2,202002,Melbourne,Perth,Melbourne - Perth,430.0,522.1955403
+2020,2,202002,Melbourne,Sydney,Melbourne - Sydney,163.0,197.948542
+2020,2,202002,Melbourne,Townsville,Melbourne - Townsville,506.0,614.490566
+2020,2,202002,Melbourne,Newcastle,Melbourne - Newcastle,223.0,270.813036
+2020,3,202003,Melbourne,Gold Coast,Melbourne - Gold Coast,250.0,303.6020583
+2020,3,202003,Melbourne,Mildura,Melbourne - Mildura,290.0,352.1783877
+2020,3,202003,Melbourne,Perth,Melbourne - Perth,504.0,612.0617496
+2020,3,202003,Melbourne,Sydney,Melbourne - Sydney,188.0,228.3087479
+2020,3,202003,Melbourne,Townsville,Melbourne - Townsville,433.0,525.838765
+2020,3,202003,Melbourne,Newcastle,Melbourne - Newcastle,190.0,230.7375643
+2020,4,202004,Melbourne,Mildura,Melbourne - Mildura,350.0,433.2167832
+2020,4,202004,Melbourne,Perth,Melbourne - Perth,618.0,764.9370629
+2020,4,202004,Melbourne,Sydney,Melbourne - Sydney,146.0,180.7132867
+2020,5,202005,Melbourne,Mildura,Melbourne - Mildura,350.0,433.2167832
+2020,5,202005,Melbourne,Perth,Melbourne - Perth,618.0,764.9370629
+2020,5,202005,Melbourne,Sydney,Melbourne - Sydney,192.0,237.6503497
+2020,6,202006,Melbourne,Mildura,Melbourne - Mildura,297.52,368.259021
+2020,6,202006,Melbourne,Perth,Melbourne - Perth,618.0,764.9370629
+2020,6,202006,Melbourne,Sydney,Melbourne - Sydney,190.0,235.1748252
+2020,6,202006,Melbourne,Newcastle,Melbourne - Newcastle,146.0,180.7132867
+2020,7,202007,Melbourne,Gold Coast,Melbourne - Gold Coast,199.0,242.4991394
+2020,7,202007,Melbourne,Mildura,Melbourne - Mildura,297.52,362.5544923
+2020,7,202007,Melbourne,Perth,Melbourne - Perth,694.0,845.7005164
+2020,7,202007,Melbourne,Sydney,Melbourne - Sydney,175.0,213.253012
+2020,7,202007,Melbourne,Townsville,Melbourne - Townsville,234.0,285.1497418
+2020,7,202007,Melbourne,Newcastle,Melbourne - Newcastle,128.0,155.979346
+2020,8,202008,Melbourne,Mildura,Melbourne - Mildura,297.52,362.5544923
+2020,8,202008,Melbourne,Perth,Melbourne - Perth,618.0,753.0877797
+2020,8,202008,Melbourne,Sydney,Melbourne - Sydney,231.0,281.4939759
+2020,9,202009,Melbourne,Mildura,Melbourne - Mildura,295.68,360.3122892
+2020,9,202009,Melbourne,Perth,Melbourne - Perth,618.0,753.0877797
+2020,9,202009,Melbourne,Sydney,Melbourne - Sydney,194.0,236.4061962
+2020,10,202010,Melbourne,Gold Coast,Melbourne - Gold Coast,249.0,300.8395904
+2020,10,202010,Melbourne,Mildura,Melbourne - Mildura,297.52,359.4610239
+2020,10,202010,Melbourne,Perth,Melbourne - Perth,618.0,746.662116
+2020,10,202010,Melbourne,Sydney,Melbourne - Sydney,186.0,224.7235495
+2020,10,202010,Melbourne,Townsville,Melbourne - Townsville,260.0,314.1296928
+2020,10,202010,Melbourne,Newcastle,Melbourne - Newcastle,133.0,160.6894198
+2020,11,202011,Melbourne,Mildura,Melbourne - Mildura,297.52,359.4610239
+2020,11,202011,Melbourne,Perth,Melbourne - Perth,618.0,746.662116
+2020,11,202011,Melbourne,Sydney,Melbourne - Sydney,238.0,287.5494881
+2020,11,202011,Melbourne,Townsville,Melbourne - Townsville,260.0,314.1296928
+2020,11,202011,Melbourne,Newcastle,Melbourne - Newcastle,176.0,212.6416382
+2020,12,202012,Melbourne,Gold Coast,Melbourne - Gold Coast,370.0,447.0307167
+2020,12,202012,Melbourne,Mildura,Melbourne - Mildura,362.0,437.3651877
+2020,12,202012,Melbourne,Perth,Melbourne - Perth,608.0,734.5802048
+2020,12,202012,Melbourne,Sydney,Melbourne - Sydney,238.0,287.5494881
+2020,12,202012,Melbourne,Townsville,Melbourne - Townsville,534.0,645.1740614
+2020,12,202012,Melbourne,Newcastle,Melbourne - Newcastle,133.0,160.6894198
+2021,1,202101,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,213.7811705
+2021,1,202101,Melbourne,Mildura,Melbourne - Mildura,295.68,355.1169466
+2021,1,202101,Melbourne,Perth,Melbourne - Perth,618.0,742.2290076
+2021,1,202101,Melbourne,Sydney,Melbourne - Sydney,172.0,206.5750636
+2021,1,202101,Melbourne,Townsville,Melbourne - Townsville,294.0,353.0992366
+2021,1,202101,Melbourne,Newcastle,Melbourne - Newcastle,133.0,159.735369
+2021,2,202102,Melbourne,Gold Coast,Melbourne - Gold Coast,206.0,247.4096692
+2021,2,202102,Melbourne,Mildura,Melbourne - Mildura,334.18,401.3561323
+2021,2,202102,Melbourne,Perth,Melbourne - Perth,418.0,502.0254453
+2021,2,202102,Melbourne,Sydney,Melbourne - Sydney,133.0,159.735369
+2021,2,202102,Melbourne,Townsville,Melbourne - Townsville,330.0,396.3358779
+2021,2,202102,Melbourne,Newcastle,Melbourne - Newcastle,133.0,159.735369
+2021,3,202103,Melbourne,Gold Coast,Melbourne - Gold Coast,190.0,228.1933842
+2021,3,202103,Melbourne,Mildura,Melbourne - Mildura,296.78,356.4380662
+2021,3,202103,Melbourne,Perth,Melbourne - Perth,398.0,478.0050891
+2021,3,202103,Melbourne,Sydney,Melbourne - Sydney,128.0,153.7302799
+2021,3,202103,Melbourne,Townsville,Melbourne - Townsville,376.0,451.5826972
+2021,3,202103,Melbourne,Newcastle,Melbourne - Newcastle,146.0,175.3486005
+2021,4,202104,Melbourne,Gold Coast,Melbourne - Gold Coast,130.0,154.9494949
+2021,4,202104,Melbourne,Mildura,Melbourne - Mildura,296.78,353.7377778
+2021,4,202104,Melbourne,Perth,Melbourne - Perth,398.0,474.3838384
+2021,4,202104,Melbourne,Sydney,Melbourne - Sydney,133.0,158.5252525
+2021,4,202104,Melbourne,Townsville,Melbourne - Townsville,337.0,401.6767677
+2021,4,202104,Melbourne,Newcastle,Melbourne - Newcastle,157.0,187.1313131
+2021,5,202105,Melbourne,Gold Coast,Melbourne - Gold Coast,130.0,154.9494949
+2021,5,202105,Melbourne,Mildura,Melbourne - Mildura,297.19,354.2264646
+2021,5,202105,Melbourne,Perth,Melbourne - Perth,378.0,450.5454545
+2021,5,202105,Melbourne,Sydney,Melbourne - Sydney,78.0,92.96969697
+2021,5,202105,Melbourne,Townsville,Melbourne - Townsville,399.0,475.5757576
+2021,5,202105,Melbourne,Newcastle,Melbourne - Newcastle,157.0,187.1313131
+2021,6,202106,Melbourne,Gold Coast,Melbourne - Gold Coast,130.0,154.9494949
+2021,6,202106,Melbourne,Mildura,Melbourne - Mildura,297.0,354.0
+2021,6,202106,Melbourne,Perth,Melbourne - Perth,438.0,522.0606061
+2021,6,202106,Melbourne,Sydney,Melbourne - Sydney,78.0,92.96969697
+2021,6,202106,Melbourne,Townsville,Melbourne - Townsville,641.0,764.020202
+2021,6,202106,Melbourne,Newcastle,Melbourne - Newcastle,135.0,160.9090909
+2021,7,202107,Melbourne,Gold Coast,Melbourne - Gold Coast,108.0,127.7593985
+2021,7,202107,Melbourne,Mildura,Melbourne - Mildura,297.19,351.5631078
+2021,7,202107,Melbourne,Perth,Melbourne - Perth,388.0,458.9874687
+2021,7,202107,Melbourne,Sydney,Melbourne - Sydney,60.0,70.97744361
+2021,7,202107,Melbourne,Townsville,Melbourne - Townsville,399.0,472.0
+2021,7,202107,Melbourne,Newcastle,Melbourne - Newcastle,121.0,143.1378446
+2021,8,202108,Melbourne,Gold Coast,Melbourne - Gold Coast,114.0,134.8571429
+2021,8,202108,Melbourne,Mildura,Melbourne - Mildura,297.19,351.5631078
+2021,8,202108,Melbourne,Perth,Melbourne - Perth,388.0,458.9874687
+2021,8,202108,Melbourne,Sydney,Melbourne - Sydney,60.0,70.97744361
+2021,8,202108,Melbourne,Townsville,Melbourne - Townsville,227.0,268.5313283
+2021,8,202108,Melbourne,Newcastle,Melbourne - Newcastle,132.0,156.1503759
+2021,9,202109,Melbourne,Gold Coast,Melbourne - Gold Coast,527.0,623.4185464
+2021,9,202109,Melbourne,Mildura,Melbourne - Mildura,297.19,351.5631078
+2021,9,202109,Melbourne,Perth,Melbourne - Perth,424.01,501.5857644
+2021,9,202109,Melbourne,Sydney,Melbourne - Sydney,228.0,269.7142857
+2021,9,202109,Melbourne,Townsville,Melbourne - Townsville,275.0,325.3132832
+2021,9,202109,Melbourne,Newcastle,Melbourne - Newcastle,184.0,217.6641604
+2021,10,202110,Melbourne,Gold Coast,Melbourne - Gold Coast,156.0,182.1071723
+2021,10,202110,Melbourne,Mildura,Melbourne - Mildura,297.19,346.9258368
+2021,10,202110,Melbourne,Perth,Melbourne - Perth,580.01,677.0768013
+2021,10,202110,Melbourne,Sydney,Melbourne - Sydney,198.0,231.1360264
+2021,10,202110,Melbourne,Townsville,Melbourne - Townsville,205.0,239.3075021
+2021,10,202110,Melbourne,Newcastle,Melbourne - Newcastle,158.0,184.4418796
+2021,11,202111,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,219.4624897
+2021,11,202111,Melbourne,Mildura,Melbourne - Mildura,364.0,424.9167354
+2021,11,202111,Melbourne,Perth,Melbourne - Perth,470.01,548.6678978
+2021,11,202111,Melbourne,Sydney,Melbourne - Sydney,128.0,149.4212696
+2021,11,202111,Melbourne,Townsville,Melbourne - Townsville,197.0,229.9686727
+2021,11,202111,Melbourne,Newcastle,Melbourne - Newcastle,135.0,157.5927453
+2021,12,202112,Melbourne,Gold Coast,Melbourne - Gold Coast,156.0,182.1071723
+2021,12,202112,Melbourne,Mildura,Melbourne - Mildura,366.0,427.2514427
+2021,12,202112,Melbourne,Perth,Melbourne - Perth,867.0,1012.095631
+2021,12,202112,Melbourne,Sydney,Melbourne - Sydney,110.0,128.4089035
+2021,12,202112,Melbourne,Townsville,Melbourne - Townsville,257.0,300.0098928
+2021,12,202112,Melbourne,Newcastle,Melbourne - Newcastle,140.0,163.4295136
+2022,1,202201,Melbourne,Gold Coast,Melbourne - Gold Coast,108.0,123.4285714
+2022,1,202201,Melbourne,Mildura,Melbourne - Mildura,297.19,339.6457143
+2022,1,202201,Melbourne,Perth,Melbourne - Perth,694.0,793.1428571
+2022,1,202201,Melbourne,Sydney,Melbourne - Sydney,110.0,125.7142857
+2022,1,202201,Melbourne,Townsville,Melbourne - Townsville,228.0,260.5714286
+2022,1,202201,Melbourne,Newcastle,Melbourne - Newcastle,112.0,128.0
+2022,2,202202,Melbourne,Gold Coast,Melbourne - Gold Coast,118.0,134.8571429
+2022,2,202202,Melbourne,Mildura,Melbourne - Mildura,297.19,339.6457143
+2022,2,202202,Melbourne,Perth,Melbourne - Perth,528.0,603.4285714
+2022,2,202202,Melbourne,Sydney,Melbourne - Sydney,118.0,134.8571429
+2022,2,202202,Melbourne,Townsville,Melbourne - Townsville,270.0,308.5714286
+2022,2,202202,Melbourne,Newcastle,Melbourne - Newcastle,176.0,201.1428571
+2022,3,202203,Melbourne,Gold Coast,Melbourne - Gold Coast,168.0,192.0
+2022,3,202203,Melbourne,Mildura,Melbourne - Mildura,297.19,339.6457143
+2022,3,202203,Melbourne,Perth,Melbourne - Perth,588.01,672.0114286
+2022,3,202203,Melbourne,Sydney,Melbourne - Sydney,154.0,176.0
+2022,3,202203,Melbourne,Townsville,Melbourne - Townsville,531.0,606.8571429
+2022,3,202203,Melbourne,Newcastle,Melbourne - Newcastle,202.0,230.8571429
+2022,4,202204,Melbourne,Gold Coast,Melbourne - Gold Coast,98.0,110.0459952
+2022,4,202204,Melbourne,Mildura,Melbourne - Mildura,317.09,356.0661697
+2022,4,202204,Melbourne,Perth,Melbourne - Perth,317.0,355.9651071
+2022,4,202204,Melbourne,Sydney,Melbourne - Sydney,118.0,132.5043616
+2022,4,202204,Melbourne,Townsville,Melbourne - Townsville,178.0,199.8794607
+2022,4,202204,Melbourne,Newcastle,Melbourne - Newcastle,98.0,110.0459952
+2022,5,202205,Melbourne,Gold Coast,Melbourne - Gold Coast,146.0,163.9460745
+2022,5,202205,Melbourne,Mildura,Melbourne - Mildura,317.09,356.0661697
+2022,5,202205,Melbourne,Perth,Melbourne - Perth,354.0,397.5130849
+2022,5,202205,Melbourne,Sydney,Melbourne - Sydney,165.0,185.2815226
+2022,5,202205,Melbourne,Townsville,Melbourne - Townsville,327.0,367.1942902
+2022,5,202205,Melbourne,Newcastle,Melbourne - Newcastle,185.0,207.739889
+2022,6,202206,Melbourne,Gold Coast,Melbourne - Gold Coast,191.0,214.4773989
+2022,6,202206,Melbourne,Mildura,Melbourne - Mildura,317.09,356.0661697
+2022,6,202206,Melbourne,Perth,Melbourne - Perth,587.0,659.1530531
+2022,6,202206,Melbourne,Sydney,Melbourne - Sydney,165.0,185.2815226
+2022,6,202206,Melbourne,Townsville,Melbourne - Townsville,648.0,727.6510706
+2022,6,202206,Melbourne,Newcastle,Melbourne - Newcastle,203.0,227.9524187
+2022,7,202207,Melbourne,Gold Coast,Melbourne - Gold Coast,148.0,163.2149533
+2022,7,202207,Melbourne,Mildura,Melbourne - Mildura,323.37,356.6136449
+2022,7,202207,Melbourne,Perth,Melbourne - Perth,452.0,498.4672897
+2022,7,202207,Melbourne,Sydney,Melbourne - Sydney,136.0,149.9813084
+2022,7,202207,Melbourne,Townsville,Melbourne - Townsville,475.0,523.8317757
+2022,7,202207,Melbourne,Newcastle,Melbourne - Newcastle,187.0,206.2242991
+2022,8,202208,Melbourne,Gold Coast,Melbourne - Gold Coast,203.0,223.8691589
+2022,8,202208,Melbourne,Mildura,Melbourne - Mildura,344.37,379.7725234
+2022,8,202208,Melbourne,Perth,Melbourne - Perth,645.0,711.3084112
+2022,8,202208,Melbourne,Sydney,Melbourne - Sydney,136.0,149.9813084
+2022,8,202208,Melbourne,Townsville,Melbourne - Townsville,377.0,415.7570093
+2022,8,202208,Melbourne,Newcastle,Melbourne - Newcastle,359.0,395.9065421
+2022,9,202209,Melbourne,Gold Coast,Melbourne - Gold Coast,431.0,475.3084112
+2022,9,202209,Melbourne,Mildura,Melbourne - Mildura,346.57,382.1986916
+2022,9,202209,Melbourne,Perth,Melbourne - Perth,905.0,998.0373832
+2022,9,202209,Melbourne,Sydney,Melbourne - Sydney,221.0,243.7196262
+2022,9,202209,Melbourne,Townsville,Melbourne - Townsville,740.0,816.0747664
+2022,9,202209,Melbourne,Newcastle,Melbourne - Newcastle,376.0,414.6542056
+2022,10,202210,Melbourne,Gold Coast,Melbourne - Gold Coast,486.0,526.1284404
+2022,10,202210,Melbourne,Mildura,Melbourne - Mildura,357.01,386.4878899
+2022,10,202210,Melbourne,Perth,Melbourne - Perth,787.0,851.9816514
+2022,10,202210,Melbourne,Sydney,Melbourne - Sydney,226.0,244.6605505
+2022,10,202210,Melbourne,Townsville,Melbourne - Townsville,438.0,474.1651376
+2022,10,202210,Melbourne,Newcastle,Melbourne - Newcastle,348.0,376.733945
+2022,11,202211,Melbourne,Gold Coast,Melbourne - Gold Coast,358.01,387.5704587
+2022,11,202211,Melbourne,Mildura,Melbourne - Mildura,364.01,394.0658716
+2022,11,202211,Melbourne,Perth,Melbourne - Perth,1078.0,1167.009174
+2022,11,202211,Melbourne,Sydney,Melbourne - Sydney,223.0,241.412844
+2022,11,202211,Melbourne,Townsville,Melbourne - Townsville,351.0,379.9816514
+2022,11,202211,Melbourne,Newcastle,Melbourne - Newcastle,515.0,557.5229358
+2022,12,202212,Melbourne,Gold Coast,Melbourne - Gold Coast,398.0,430.8623853
+2022,12,202212,Melbourne,Mildura,Melbourne - Mildura,418.0,452.5137615
+2022,12,202212,Melbourne,Perth,Melbourne - Perth,871.0,942.9174312
+2022,12,202212,Melbourne,Sydney,Melbourne - Sydney,348.0,376.733945
+2022,12,202212,Melbourne,Townsville,Melbourne - Townsville,613.0,663.6146789
+2022,12,202212,Melbourne,Newcastle,Melbourne - Newcastle,361.0,390.8073394
+2023,1,202301,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,222.1176471
+2023,1,202301,Melbourne,Mildura,Melbourne - Mildura,358.0,382.2986425
+2023,1,202301,Melbourne,Perth,Melbourne - Perth,585.0,624.7058824
+2023,1,202301,Melbourne,Sydney,Melbourne - Sydney,172.0,183.6742081
+2023,1,202301,Melbourne,Townsville,Melbourne - Townsville,270.0,288.3257919
+2023,1,202301,Melbourne,Newcastle,Melbourne - Newcastle,260.0,277.6470588
+2023,2,202302,Melbourne,Gold Coast,Melbourne - Gold Coast,186.0,198.6244344
+2023,2,202302,Melbourne,Mildura,Melbourne - Mildura,358.0,382.2986425
+2023,2,202302,Melbourne,Perth,Melbourne - Perth,668.0,713.3393665
+2023,2,202302,Melbourne,Sydney,Melbourne - Sydney,183.0,195.4208145
+2023,2,202302,Melbourne,Townsville,Melbourne - Townsville,238.0,254.1538462
+2023,2,202302,Melbourne,Newcastle,Melbourne - Newcastle,228.0,243.4751131
+2023,3,202303,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,222.1176471
+2023,3,202303,Melbourne,Mildura,Melbourne - Mildura,358.0,382.2986425
+2023,3,202303,Melbourne,Perth,Melbourne - Perth,602.0,642.8597285
+2023,3,202303,Melbourne,Sydney,Melbourne - Sydney,193.0,206.0995475
+2023,3,202303,Melbourne,Townsville,Melbourne - Townsville,276.0,294.7330317
+2023,3,202303,Melbourne,Newcastle,Melbourne - Newcastle,198.0,211.438914
+2023,4,202304,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,188.5175767
+2023,4,202304,Melbourne,Mildura,Melbourne - Mildura,368.0,389.7442034
+2023,4,202304,Melbourne,Perth,Melbourne - Perth,510.0,540.1346298
+2023,4,202304,Melbourne,Sydney,Melbourne - Sydney,148.0,156.7449514
+2023,4,202304,Melbourne,Townsville,Melbourne - Townsville,335.0,354.7943156
+2023,4,202304,Melbourne,Newcastle,Melbourne - Newcastle,160.0,169.4540015
+2023,5,202305,Melbourne,Gold Coast,Melbourne - Gold Coast,218.0,230.881077
+2023,5,202305,Melbourne,Mildura,Melbourne - Mildura,368.0,389.7442034
+2023,5,202305,Melbourne,Perth,Melbourne - Perth,499.0,528.4846672
+2023,5,202305,Melbourne,Sydney,Melbourne - Sydney,178.0,188.5175767
+2023,5,202305,Melbourne,Townsville,Melbourne - Townsville,334.0,353.7352281
+2023,5,202305,Melbourne,Newcastle,Melbourne - Newcastle,228.0,241.4719521
+2023,6,202306,Melbourne,Gold Coast,Melbourne - Gold Coast,333.0,352.6761406
+2023,6,202306,Melbourne,Mildura,Melbourne - Mildura,358.0,379.1533283
+2023,6,202306,Melbourne,Perth,Melbourne - Perth,538.0,569.78908
+2023,6,202306,Melbourne,Sydney,Melbourne - Sydney,160.0,169.4540015
+2023,6,202306,Melbourne,Townsville,Melbourne - Townsville,736.0,779.4884069
+2023,6,202306,Melbourne,Newcastle,Melbourne - Newcastle,177.0,187.4584892
+2023,7,202307,Melbourne,Gold Coast,Melbourne - Gold Coast,178.0,186.2882483
+2023,7,202307,Melbourne,Mildura,Melbourne - Mildura,358.0,374.6696231
+2023,7,202307,Melbourne,Perth,Melbourne - Perth,484.0,506.5365854
+2023,7,202307,Melbourne,Sydney,Melbourne - Sydney,148.0,154.8913525
+2023,7,202307,Melbourne,Townsville,Melbourne - Townsville,423.0,442.6962306
+2023,7,202307,Melbourne,Newcastle,Melbourne - Newcastle,183.0,191.5210643
+2023,8,202308,Melbourne,Gold Coast,Melbourne - Gold Coast,188.0,196.7538803
+2023,8,202308,Melbourne,Mildura,Melbourne - Mildura,358.0,374.6696231
+2023,8,202308,Melbourne,Perth,Melbourne - Perth,420.0,439.556541
+2023,8,202308,Melbourne,Sydney,Melbourne - Sydney,148.0,154.8913525
+2023,8,202308,Melbourne,Townsville,Melbourne - Townsville,570.0,596.54102
+2023,8,202308,Melbourne,Newcastle,Melbourne - Newcastle,198.0,207.2195122
+2023,9,202309,Melbourne,Gold Coast,Melbourne - Gold Coast,282.0,295.1308204
+2023,9,202309,Melbourne,Mildura,Melbourne - Mildura,418.0,437.4634146
+2023,9,202309,Melbourne,Perth,Melbourne - Perth,448.0,468.8603104
+2023,9,202309,Melbourne,Sydney,Melbourne - Sydney,181.0,189.4279379
+2023,9,202309,Melbourne,Townsville,Melbourne - Townsville,531.0,555.7250554
+2023,9,202309,Melbourne,Newcastle,Melbourne - Newcastle,198.0,207.2195122
+2023,10,202310,Melbourne,Gold Coast,Melbourne - Gold Coast,272.0,282.9919177
+2023,10,202310,Melbourne,Mildura,Melbourne - Mildura,274.0,285.0727406
+2023,10,202310,Melbourne,Perth,Melbourne - Perth,540.0,561.8221896
+2023,10,202310,Melbourne,Sydney,Melbourne - Sydney,129.0,134.2130786
+2023,10,202310,Melbourne,Townsville,Melbourne - Townsville,313.0,325.6487877
+2023,10,202310,Melbourne,Newcastle,Melbourne - Newcastle,259.0,269.4665687
+2023,11,202311,Melbourne,Gold Coast,Melbourne - Gold Coast,194.0,201.8398237
+2023,11,202311,Melbourne,Mildura,Melbourne - Mildura,298.0,310.0426157
+2023,11,202311,Melbourne,Perth,Melbourne - Perth,649.99,676.2570463
+2023,11,202311,Melbourne,Sydney,Melbourne - Sydney,165.0,171.6678913
+2023,11,202311,Melbourne,Townsville,Melbourne - Townsville,244.0,253.8603968
+2023,11,202311,Melbourne,Newcastle,Melbourne - Newcastle,142.0,147.7384276
+2023,12,202312,Melbourne,Gold Coast,Melbourne - Gold Coast,424.0,441.13446
+2023,12,202312,Melbourne,Mildura,Melbourne - Mildura,403.0,419.2858193
+2023,12,202312,Melbourne,Perth,Melbourne - Perth,849.0,883.3093314
+2023,12,202312,Melbourne,Sydney,Melbourne - Sydney,285.0,296.5172667
+2023,12,202312,Melbourne,Townsville,Melbourne - Townsville,510.0,530.6098457
+2023,12,202312,Melbourne,Newcastle,Melbourne - Newcastle,424.0,441.13446
+2024,1,202401,Melbourne,Gold Coast,Melbourne - Gold Coast,184.0,189.6244541
+2024,1,202401,Melbourne,Mildura,Melbourne - Mildura,298.0,307.1091703
+2024,1,202401,Melbourne,Perth,Melbourne - Perth,618.0,636.8908297
+2024,1,202401,Melbourne,Sydney,Melbourne - Sydney,186.0,191.6855895
+2024,1,202401,Melbourne,Townsville,Melbourne - Townsville,263.0,271.0393013
+2024,1,202401,Melbourne,Newcastle,Melbourne - Newcastle,225.0,231.8777293
+2024,2,202402,Melbourne,Gold Coast,Melbourne - Gold Coast,214.0,220.5414847
+2024,2,202402,Melbourne,Mildura,Melbourne - Mildura,298.0,307.1091703
+2024,2,202402,Melbourne,Perth,Melbourne - Perth,553.0,569.9039301
+2024,2,202402,Melbourne,Sydney,Melbourne - Sydney,100.0,103.0567686
+2024,2,202402,Melbourne,Townsville,Melbourne - Townsville,214.0,220.5414847
+2024,2,202402,Melbourne,Newcastle,Melbourne - Newcastle,206.0,212.2969432
+2024,3,202403,Melbourne,Gold Coast,Melbourne - Gold Coast,399.0,411.1965066
+2024,3,202403,Melbourne,Mildura,Melbourne - Mildura,398.0,410.1659389
+2024,3,202403,Melbourne,Perth,Melbourne - Perth,756.99,780.1294323
+2024,3,202403,Melbourne,Sydney,Melbourne - Sydney,279.0,287.5283843
+2024,3,202403,Melbourne,Townsville,Melbourne - Townsville,488.0,502.9170306
+2024,3,202403,Melbourne,Newcastle,Melbourne - Newcastle,216.0,222.6026201
+2024,4,202404,Melbourne,Gold Coast,Melbourne - Gold Coast,185.0,188.7319885
+2024,4,202404,Melbourne,Mildura,Melbourne - Mildura,298.0,304.0115274
+2024,4,202404,Melbourne,Perth,Melbourne - Perth,441.0,449.8962536
+2024,4,202404,Melbourne,Sydney,Melbourne - Sydney,169.0,172.4092219
+2024,4,202404,Melbourne,Townsville,Melbourne - Townsville,349.0,356.0403458
+2024,4,202404,Melbourne,Newcastle,Melbourne - Newcastle,186.0,189.7521614
+2024,5,202405,Melbourne,Gold Coast,Melbourne - Gold Coast,196.0,199.9538905
+2024,5,202405,Melbourne,Mildura,Melbourne - Mildura,298.0,304.0115274
+2024,5,202405,Melbourne,Perth,Melbourne - Perth,510.0,520.2881844
+2024,5,202405,Melbourne,Sydney,Melbourne - Sydney,158.0,161.1873199
+2024,5,202405,Melbourne,Townsville,Melbourne - Townsville,332.0,338.6974063
+2024,5,202405,Melbourne,Newcastle,Melbourne - Newcastle,150.0,153.0259366
+2024,6,202406,Melbourne,Gold Coast,Melbourne - Gold Coast,355.0,362.1613833
+2024,6,202406,Melbourne,Mildura,Melbourne - Mildura,348.0,355.0201729
+2024,6,202406,Melbourne,Perth,Melbourne - Perth,421.0,429.4927954
+2024,6,202406,Melbourne,Sydney,Melbourne - Sydney,174.0,177.5100865
+2024,6,202406,Melbourne,Townsville,Melbourne - Townsville,582.0,593.740634
+2024,6,202406,Melbourne,Newcastle,Melbourne - Newcastle,227.0,231.5792507
+2024,7,202407,Melbourne,Gold Coast,Melbourne - Gold Coast,252.0,256.5291157
+2024,7,202407,Melbourne,Mildura,Melbourne - Mildura,398.0,405.1531272
+2024,7,202407,Melbourne,Perth,Melbourne - Perth,398.0,405.1531272
+2024,7,202407,Melbourne,Sydney,Melbourne - Sydney,183.0,186.2890007
+2024,7,202407,Melbourne,Townsville,Melbourne - Townsville,400.0,407.1890726
+2024,7,202407,Melbourne,Newcastle,Melbourne - Newcastle,150.0,152.6959022
+2024,8,202408,Melbourne,Gold Coast,Melbourne - Gold Coast,274.01,278.9346945
+2024,8,202408,Melbourne,Mildura,Melbourne - Mildura,398.0,405.1531272
+2024,8,202408,Melbourne,Perth,Melbourne - Perth,398.0,405.1531272
+2024,8,202408,Melbourne,Sydney,Melbourne - Sydney,163.0,165.9295471
+2024,8,202408,Melbourne,Townsville,Melbourne - Townsville,304.0,309.4636952
+2024,8,202408,Melbourne,Newcastle,Melbourne - Newcastle,150.0,152.6959022
+2024,9,202409,Melbourne,Gold Coast,Melbourne - Gold Coast,410.0,417.3687994
+2024,9,202409,Melbourne,Mildura,Melbourne - Mildura,348.0,354.2544932
+2024,9,202409,Melbourne,Perth,Melbourne - Perth,487.0,495.7526959
+2024,9,202409,Melbourne,Sydney,Melbourne - Sydney,212.0,215.8102085
+2024,9,202409,Melbourne,Townsville,Melbourne - Townsville,836.0,851.0251618
+2024,9,202409,Melbourne,Newcastle,Melbourne - Newcastle,173.0,176.1092739
+2024,10,202410,Melbourne,Gold Coast,Melbourne - Gold Coast,432.0,436.002851
+2024,10,202410,Melbourne,Mildura,Melbourne - Mildura,424.0,427.9287242
+2024,10,202410,Melbourne,Perth,Melbourne - Perth,504.0,508.6699929
+2024,10,202410,Melbourne,Sydney,Melbourne - Sydney,189.0,190.7512473
+2024,10,202410,Melbourne,Townsville,Melbourne - Townsville,547.0,552.0684248
+2024,10,202410,Melbourne,Newcastle,Melbourne - Newcastle,209.0,210.9365645
+2024,11,202411,Melbourne,Gold Coast,Melbourne - Gold Coast,247.01,249.2987598
+2024,11,202411,Melbourne,Mildura,Melbourne - Mildura,348.0,351.2245189
+2024,11,202411,Melbourne,Perth,Melbourne - Perth,484.0,488.4846757
+2024,11,202411,Melbourne,Sydney,Melbourne - Sydney,180.0,181.6678546
+2024,11,202411,Melbourne,Townsville,Melbourne - Townsville,319.0,321.955809
+2024,11,202411,Melbourne,Newcastle,Melbourne - Newcastle,212.0,213.9643621
+2024,12,202412,Melbourne,Gold Coast,Melbourne - Gold Coast,441.0,445.0862438
+2024,12,202412,Melbourne,Mildura,Melbourne - Mildura,368.01,371.4199287
+2024,12,202412,Melbourne,Perth,Melbourne - Perth,822.0,829.616536
+2024,12,202412,Melbourne,Sydney,Melbourne - Sydney,279.01,281.5952673
+2024,12,202412,Melbourne,Townsville,Melbourne - Townsville,582.0,587.3927299
+2024,12,202412,Melbourne,Newcastle,Melbourne - Newcastle,497.0,501.6051319
+2025,1,202501,Melbourne,Gold Coast,Melbourne - Gold Coast,164.0,164.0
+2025,1,202501,Melbourne,Mildura,Melbourne - Mildura,318.02,318.02
+2025,1,202501,Melbourne,Perth,Melbourne - Perth,441.0,441.0
+2025,1,202501,Melbourne,Sydney,Melbourne - Sydney,163.0,163.0
+2025,1,202501,Melbourne,Townsville,Melbourne - Townsville,289.0,289.0
+2025,1,202501,Melbourne,Newcastle,Melbourne - Newcastle,150.0,150.0
+2025,2,202502,Melbourne,Gold Coast,Melbourne - Gold Coast,315.01,315.01
+2025,2,202502,Melbourne,Mildura,Melbourne - Mildura,358.0,358.0
+2025,2,202502,Melbourne,Perth,Melbourne - Perth,628.0,628.0
+2025,2,202502,Melbourne,Sydney,Melbourne - Sydney,255.0,255.0
+2025,2,202502,Melbourne,Townsville,Melbourne - Townsville,312.0,312.0
+2025,2,202502,Melbourne,Newcastle,Melbourne - Newcastle,299.0,299.0
+2025,3,202503,Melbourne,Sydney,Melbourne - Sydney,166.0,167.2977967
+2025,3,202503,Melbourne,Perth,Melbourne - Perth,478.0,481.7370291
+2025,3,202503,Melbourne,Gold Coast,Melbourne - Gold Coast,260.01,262.0427719
+2025,3,202503,Melbourne,Mildura,Melbourne - Mildura,358.0,360.7988628
+2025,3,202503,Melbourne,Newcastle,Melbourne - Newcastle,188.0,189.4697939
+2025,3,202503,Melbourne,Townsville,Melbourne - Townsville,236.0,237.8450604
+2025,4,202504,Melbourne,Sydney,Melbourne - Sydney,178.0,178.0
+2025,4,202504,Melbourne,Perth,Melbourne - Perth,668.0,668.0
+2025,4,202504,Melbourne,Gold Coast,Melbourne - Gold Coast,179.0,179.0
+2025,4,202504,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,4,202504,Melbourne,Newcastle,Melbourne - Newcastle,118.0,118.0
+2025,4,202504,Melbourne,Townsville,Melbourne - Townsville,347.0,347.0
+2025,5,202505,Melbourne,Gold Coast,Melbourne - Gold Coast,179.0,179.0
+2025,5,202505,Melbourne,Mildura,Melbourne - Mildura,368.0,368.0
+2025,5,202505,Melbourne,Perth,Melbourne - Perth,408.0,408.0
+2025,5,202505,Melbourne,Sydney,Melbourne - Sydney,166.0,166.0
+2025,5,202505,Melbourne,Townsville,Melbourne - Townsville,332.0,332.0
+2025,5,202505,Melbourne,Newcastle,Melbourne - Newcastle,128.0,128.0
+2025,6,202506,Melbourne,Gold Coast,Melbourne - Gold Coast,208.0,208.0
+2025,6,202506,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,6,202506,Melbourne,Perth,Melbourne - Perth,548.0,548.0
+2025,6,202506,Melbourne,Sydney,Melbourne - Sydney,166.0,166.0
+2025,6,202506,Melbourne,Townsville,Melbourne - Townsville,706.0,706.0
+2025,6,202506,Melbourne,Newcastle,Melbourne - Newcastle,158.0,158.0
+2025,7,202507,Melbourne,Gold Coast,Melbourne - Gold Coast,224.0,224.0
+2025,7,202507,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,7,202507,Melbourne,Perth,Melbourne - Perth,471.0,471.0
+2025,7,202507,Melbourne,Sydney,Melbourne - Sydney,165.0,165.0
+2025,7,202507,Melbourne,Townsville,Melbourne - Townsville,297.0,297.0
+2025,7,202507,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.0
+2025,8,202508,Melbourne,Gold Coast,Melbourne - Gold Coast,236.0,236.0
+2025,8,202508,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,8,202508,Melbourne,Perth,Melbourne - Perth,470.0,470.0
+2025,8,202508,Melbourne,Sydney,Melbourne - Sydney,182.0,182.0
+2025,8,202508,Melbourne,Townsville,Melbourne - Townsville,300.0,300.0
+2025,8,202508,Melbourne,Newcastle,Melbourne - Newcastle,120.0,120.0
+2025,9,202509,Melbourne,Gold Coast,Melbourne - Gold Coast,346.0,346.0
+2025,9,202509,Melbourne,Mildura,Melbourne - Mildura,338.0,338.0
+2025,9,202509,Melbourne,Perth,Melbourne - Perth,601.0,601.0
+2025,9,202509,Melbourne,Sydney,Melbourne - Sydney,190.0,190.0
+2025,9,202509,Melbourne,Townsville,Melbourne - Townsville,638.0,638.0
+2025,9,202509,Melbourne,Newcastle,Melbourne - Newcastle,208.0,208.0
