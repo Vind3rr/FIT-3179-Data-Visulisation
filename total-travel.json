@@ -1,9 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly total overseas arrivals and departures (ABS OAD).",
-  "width": 900,
-  "height": 420,
-
+  "description": "Monthly total overseas arrivals and departures (ABS OAD) with brushable timeline.",
   "data": {
     "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total_travel_clean.csv",
     "format": { "type": "csv" }
@@ -14,119 +11,164 @@
     { "filter": "isValid(datum.Millions) && isValid(datum.Date)" }
   ],
 
-  "encoding": {
-    "x": { "field": "Date", "type": "temporal", "title": "Month", "axis": { "format": "%b %Y", "labelAngle": -45 } },
-    "y": { "field": "Millions", "type": "quantitative", "title": "People (millions)" },
-    "color": {
-      "field": "Type",
-      "type": "nominal",
-      "title": "Flow",
-      "scale": {
-        "domain": ["Arrivals (M)", "Departures (M)"],
-        "range": ["#1f77b4", "#7f7f7f"]
-      }
-    },
-    "tooltip": [
-      { "field": "Date", "type": "temporal", "title": "Month", "format": "%b %Y" },
-      { "field": "Millions", "type": "quantitative", "format": ".2f", "title": "Millions" }
-    ]
-  },
+  "vconcat": [
+    {
+      "width": 900,
+      "height": 420,
 
-  "layer": [
-    { "mark": { "type": "line", "point": true, "strokeWidth": 2 }},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Month",
+          "axis": { "format": "%b %Y", "labelAngle": -45 },
+          "scale": { "domain": { "param": "brush" } }
+        },
+        "y": { "field": "Millions", "type": "quantitative", "title": "People (millions)" },
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "title": "Flow",
+          "scale": {
+            "domain": ["Arrivals (M)", "Departures (M)"],
+            "range": ["#1f77b4", "#7f7f7f"]
+          }
+        },
+        "tooltip": [
+          { "field": "Date", "type": "temporal", "title": "Month", "format": "%b %Y" },
+          { "field": "Millions", "type": "quantitative", "format": ".2f", "title": "Millions" },
+          { "field": "Type", "type": "nominal", "title": "Flow" }
+        ]
+      },
+
+      "layer": [
+        { "mark": { "type": "line", "point": true, "strokeWidth": 2 }},
+
+        {
+          "data": { "values": [
+            { "Date": "2020-01-01", "Millions": 2.26 },
+            { "Date": "2019-12-01", "Millions": 2.24 }
+          ]},
+          "mark": { "type": "point", "shape": "circle", "size": 230, "filled": true, "stroke": "black", "strokeWidth": 1.1 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "color": { "value": "#9467bd" }
+          }
+        },
+        {
+          "data": { "values": [{ "Date": "2020-02-01", "Millions": 2.25, "text": "Pre-COVID high" }] },
+          "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 6, "fontSize": 11 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "text": { "field": "text" },
+            "color": { "value": "#9467bd" },
+            "tooltip": null
+          }
+        },
+
+        {
+          "data": { "values": [
+            { "Date": "2020-03-01", "Millions": 0.92 },
+            { "Date": "2020-03-01", "Millions": 0.83 }
+          ]},
+          "mark": { "type": "point", "shape": "circle", "size": 220, "filled": true, "stroke": "black", "strokeWidth": 1 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "color": { "value": "#ff7f0e" }
+          }
+        },
+        {
+          "data": { "values": [{ "Date": "2020-04-01", "Millions": 0.85, "text": "COVID-19 restrictions begin (2020)" }] },
+          "mark": { "type": "text", "align": "left", "baseline": "bottom", "dx": 6, "fontSize": 11 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "text": { "field": "text" },
+            "color": { "value": "#ff7f0e" },
+            "tooltip": null
+          }
+        },
+
+        {
+          "data": { "values": [
+            { "Date": "2022-02-01", "Millions": 0.27 },
+            { "Date": "2022-02-01", "Millions": 0.19 }
+          ]},
+          "mark": { "type": "point", "shape": "circle", "size": 220, "filled": true, "stroke": "black", "strokeWidth": 1 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "color": { "value": "#8c564b" }
+          }
+        },
+        {
+          "data": { "values": [{ "Date": "2022-04-01", "Millions": 0.2, "text": "Reopening & recovery (2022)" }] },
+          "mark": { "type": "text", "align": "left", "baseline": "bottom", "dx": 6, "fontSize": 11 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "text": { "field": "text" },
+            "color": { "value": "#8c564b" },
+            "tooltip": null
+          }
+        },
+
+        {
+          "data": { "values": [
+            { "Date": "2025-01-01", "Millions": 2.38 },
+            { "Date": "2024-12-01", "Millions": 2.26 }
+          ]},
+          "mark": { "type": "point", "shape": "circle", "size": 240, "filled": true, "stroke": "black", "strokeWidth": 1.2 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "color": { "value": "#bcbd22" }
+          }
+        },
+        {
+          "data": { "values": [{ "Date": "2023-07-01", "Millions": 2.30, "text": "Post-pandemic peaks" }] },
+          "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 6, "fontSize": 11 },
+          "encoding": {
+            "x": { "field": "Date", "type": "temporal" },
+            "y": { "field": "Millions" },
+            "text": { "field": "text" },
+            "color": { "value": "#bcbd22" },
+            "tooltip": null
+          }
+        }
+      ]
+    },
 
     {
-      "data": { "values": [
-        { "Date": "2020-01-01", "Millions": 2.26 },
-        { "Date": "2019-12-01", "Millions": 2.24 }
-      ]},
-      "mark": { "type": "point", "shape": "circle", "size": 230, "filled": true, "stroke": "black", "strokeWidth": 1.1 },
+      "width": 900,
+      "height": 70,
+      "mark": { "type": "area", "opacity": 0.25 },
+      "params": [
+        {
+          "name": "brush",
+          "select": { "type": "interval", "encodings": ["x"] }
+        }
+      ],
       "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "color": { "value": "#9467bd" }
-      }
-    },
-    {
-      "data": { "values": [{ "Date": "2020-02-01", "Millions": 2.25, "text": "Pre-COVID high" }] },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 6, "fontSize": 11 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "text": { "field": "text" },
-        "color": { "value": "#9467bd" },
-        "tooltip": null
-      }
-    },
-
-    {
-      "data": { "values": [
-        { "Date": "2020-03-01", "Millions": 0.92 },
-        { "Date": "2020-03-01", "Millions": 0.83 }
-      ]},
-      "mark": { "type": "point", "shape": "circle", "size": 220, "filled": true, "stroke": "black", "strokeWidth": 1 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "color": { "value": "#ff7f0e" }
-      }
-    },
-    {
-      "data": { "values": [{ "Date": "2020-04-01", "Millions": 0.85, "text": "COVID-19 restrictions begin (2020)" }] },
-      "mark": { "type": "text", "align": "left", "baseline": "bottom", "dx": 6, "fontSize": 11 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "text": { "field": "text" },
-        "color": { "value": "#ff7f0e" },
-        "tooltip": null
-      }
-    },
-
-    {
-      "data": { "values": [
-        { "Date": "2022-02-01", "Millions": 0.27 },
-        { "Date": "2022-02-01", "Millions": 0.19 }
-      ]},
-      "mark": { "type": "point", "shape": "circle", "size": 220, "filled": true, "stroke": "black", "strokeWidth": 1 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "color": { "value": "#8c564b" }
-      }
-    },
-    {
-      "data": { "values": [{ "Date": "2022-04-01", "Millions": 0.2, "text": "Reopening & recovery (2022)" }] },
-      "mark": { "type": "text", "align": "left", "baseline": "bottom", "dx": 6, "fontSize": 11 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "text": { "field": "text" },
-        "color": { "value": "#8c564b" },
-        "tooltip": null
-      }
-    },
-
-    {
-      "data": { "values": [
-        { "Date": "2025-01-01", "Millions": 2.38 },
-        { "Date": "2024-12-01", "Millions": 2.26 }
-      ]},
-      "mark": { "type": "point", "shape": "circle", "size": 240, "filled": true, "stroke": "black", "strokeWidth": 1.2 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "color": { "value": "#bcbd22" }
-      }
-    },
-    {
-      "data": { "values": [{ "Date": "2023-07-01", "Millions": 2.30, "text": "Post-pandemic peaks" }] },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 6, "fontSize": 11 },
-      "encoding": {
-        "x": { "field": "Date", "type": "temporal" },
-        "y": { "field": "Millions" },
-        "text": { "field": "text" },
-        "color": { "value": "#bcbd22" },
+        "x": { "field": "Date", "type": "temporal", "title": "" },
+        "y": {
+          "field": "Millions",
+          "type": "quantitative",
+          "axis": { "tickCount": 3, "grid": false },
+          "title": ""
+        },
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Arrivals (M)", "Departures (M)"],
+            "range": ["#1f77b4", "#7f7f7f"]
+          }
+        },
         "tooltip": null
       }
     }
