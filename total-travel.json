@@ -8,6 +8,18 @@
     "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total_travel_clean.csv",
     "format": { "type": "csv" }
   },
+  "params": [
+    {
+      "name": "focus",
+      "select": {
+        "type": "point",
+        "fields": ["Type"],
+        "on": "click",
+        "nearest": true,
+        "clear": "dblclick"
+      }
+    }
+  ],
 
   "transform": [
     { "fold": ["Arrivals (M)", "Departures (M)"], "as": ["Type", "Millions"] },
@@ -33,7 +45,18 @@
   },
 
   "layer": [
-    { "mark": { "type": "line", "point": true, "strokeWidth": 2 }},
+    { 
+      "mark": { "type": "line", "point": true, "strokeWidth": 2 },
+      "encoding": {
+        "opacity": {
+          "condition": [
+            { "param": "focus", "empty": true, "value": 1 },
+            { "param": "focus", "value": 1 }
+          ],
+          "value": 0.2
+        }
+      }
+    },
 
     {
       "data": { "values": [
