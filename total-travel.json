@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Monthly total overseas arrivals and departures (ABS OAD) with brushable timeline.",
+  "description": "Monthly total overseas arrivals and departures (ABS OAD) with brushable timeline + legend.",
   "data": {
     "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/total_travel_clean.csv",
     "format": { "type": "csv" }
@@ -29,6 +29,7 @@
           "field": "Type",
           "type": "nominal",
           "title": "Flow",
+          "legend": { "orient": "bottom" },
           "scale": {
             "domain": ["Arrivals (M)", "Departures (M)"],
             "range": ["#1f77b4", "#7f7f7f"]
@@ -172,5 +173,10 @@
         "tooltip": null
       }
     }
-  ]
+  ],
+
+  "resolve": {
+    "legend": { "color": "shared" },
+    "scale": { "color": "shared" }
+  }
 }
