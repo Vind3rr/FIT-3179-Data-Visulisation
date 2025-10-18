@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Aug 2024 → Aug 2025 percentage change by category (diverging lollipop).",
   "background": "transparent",
+  "width": 900, 
+  "height": 400, 
   "data": {
     "values": [
       {"Category":"Permanent arrivals","ChangePct":-5.7},
