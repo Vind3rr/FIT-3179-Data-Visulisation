@@ -9,19 +9,6 @@
     "format": { "type": "csv" }
   },
 
-  "params": [
-    {
-      "name": "focus",
-      "select": {
-        "type": "point",
-        "fields": ["Type"],
-        "on": "click",
-        "nearest": true,
-        "clear": "dblclick"
-      }
-    }
-  ],
-
   "transform": [
     { "fold": ["Arrivals (M)", "Departures (M)"], "as": ["Type", "Millions"] },
     { "filter": "isValid(datum.Millions) && isValid(datum.Date)" }
@@ -46,18 +33,8 @@
   },
 
   "layer": [
-    { 
-      "mark": { "type": "line", "point": true, "strokeWidth": 2 },
-      "encoding": {
-        "opacity": {
-          "condition": [
-            { "param": "focus", "empty": true, "value": 1 },
-            { "param": "focus", "value": 1 }
-          ],
-          "value": 0.2
-        }
-      }
-    },
+    { "mark": { "type": "line", "point": true, "strokeWidth": 2 }},
+
     {
       "data": { "values": [
         { "Date": "2020-01-01", "Millions": 2.26 },
@@ -155,5 +132,3 @@
     }
   ]
 }
-
-
