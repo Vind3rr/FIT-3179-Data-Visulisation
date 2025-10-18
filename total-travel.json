@@ -154,7 +154,17 @@
         }
       ],
       "encoding": {
-        "x": { "field": "Date", "type": "temporal", "title": "" },
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Brush to Zoom",
+        "axis": {
+          "titleFontSize": 13,
+          "titleFontWeight": "bold",
+          "titleColor": "#444",
+            "labelAngle": 0
+        }
+      },
         "y": {
           "field": "Millions",
           "type": "quantitative",
