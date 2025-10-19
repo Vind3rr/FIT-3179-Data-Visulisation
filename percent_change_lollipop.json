@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Aug 2024 → Aug 2025 percentage change by category (diverging lollipop).",
+  "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop).",
   "background": "transparent",
 
   "width": 900,
@@ -23,8 +23,6 @@
   "transform": [
     {"calculate": "0", "as": "Zero"},
     {"calculate": "datum.ChangePct >= 0 ? 'Increase' : 'Decrease'", "as":"Direction"},
-
-    /* NEW: compute global max/min and flags */
     {
       "joinaggregate": [
         {"op": "max", "field": "ChangePct", "as": "MaxChange"},
@@ -34,7 +32,6 @@
     {"calculate": "datum.ChangePct == datum.MaxChange", "as": "IsHighestPositive"},
     {"calculate": "datum.ChangePct == datum.MinChange", "as": "IsHighestNegative"},
 
-    /* NEW: annotation strings */
     {"calculate": "'Highest positive change (' + format(datum.ChangePct,'+.1f') + '%)'", "as":"AnnoHighText"},
     {"calculate": "'Highest negative change (' + format(datum.ChangePct,'+.1f') + '%)'", "as":"AnnoLowText"}
   ],
@@ -53,7 +50,7 @@
       "mark": {"type":"point", "filled": true, "size": 100},
       "encoding": {
         "y": {"field":"Category","type":"nominal","sort":"-x"},
-        "x": {"field":"ChangePct","type":"quantitative","title":"% change (2024 → 2025)"},
+        "x": {"field":"ChangePct","type":"quantitative","title":"% change (2024 -> 2025)"},
         "color": {"field":"Direction","type":"nominal","legend":{"orient":"bottom"}},
         "tooltip": [
           {"field":"Category"},
@@ -62,7 +59,6 @@
       }
     },
 
-    /* NEW: Highest positive annotation (to the right) */
     {
       "transform": [{"filter": "datum.IsHighestPositive"}],
       "mark": {"type":"text", "fontWeight":"bold", "baseline":"middle", "align":"left", "dx": 10},
@@ -74,7 +70,6 @@
       }
     },
 
-    /* NEW: Highest negative annotation (to the left) */
     {
       "transform": [{"filter": "datum.IsHighestNegative"}],
       "mark": {"type":"text", "fontWeight":"bold", "baseline":"middle", "align":"right", "dx": -10},
@@ -92,4 +87,3 @@
     "view": {"stroke": "#e8e2d8", "cornerRadius": 8}
   }
 }
-
