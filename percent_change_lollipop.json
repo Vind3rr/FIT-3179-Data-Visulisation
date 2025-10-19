@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop).",
+  "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop) with left/right % labels.",
   "background": "transparent",
-
-  "width": 900, 
-  "height": 400, 
+  "width": 900,
+  "height": 400,
 
   "data": {
     "values": [
@@ -19,15 +18,17 @@
       {"Category":"Short-term visitor departures","ChangePct":13.7}
     ]
   },
+
   "transform": [
     {"calculate": "0", "as": "Zero"},
     {"calculate": "datum.ChangePct >= 0 ? 'Increase' : 'Decrease'", "as":"Direction"}
   ],
+
   "layer": [
     {
       "mark": {"type":"rule", "strokeWidth":2, "opacity":0.6},
       "encoding": {
-        "y": {"field":"Category","type":"nominal","sort":"-x","title":null},
+        "y": {"field":"Category","type":"nominal","sort":"-x","title": null},
         "x": {"field":"Zero","type":"quantitative"},
         "x2": {"field":"ChangePct"},
         "color": {"field":"Direction","type":"nominal","legend": null}
@@ -44,10 +45,55 @@
           {"field":"ChangePct","type":"quantitative","title":"% change","format":"+.1f"}
         ]
       }
+    },
+
+    {
+      "transform": [
+        {"filter": "datum.Direction === 'Increase'"},
+        {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "LabelPos"}
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "fill": "#333",
+        "aria": false
+      },
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"ChangePct","type":"quantitative"},
+        "text": {"field":"LabelPos"}
+      }
+    },
+
+    {
+      "transform": [
+        {"filter": "datum.Direction === 'Decrease'"},
+        {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "LabelNeg"}
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "right",
+        "dx": -8,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "fill": "#333",
+        "aria": false
+      },
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"ChangePct","type":"quantitative"},
+        "text": {"field":"LabelNeg"}
+      }
     }
   ],
+
   "config": {
     "axis": {"grid": true, "tickBand":"extent"},
     "view": {"stroke": "#e8e2d8", "cornerRadius": 8}
   }
-} 
+}
