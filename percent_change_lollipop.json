@@ -3,7 +3,7 @@
   "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop).",
   "background": "transparent",
   "width": 900,
-  "height": 370,
+  "height": 400,
 
   "data": {
     "values": [
@@ -19,7 +19,10 @@
     ]
   },
 
-  "resolve": { "axis": { "y": "shared", "x": "shared" } },
+  "resolve": {
+    "scale": { "x": "shared", "y": "shared" },
+    "axis":  { "x": "shared", "y": "shared" }
+  },
 
   "transform": [
     { "calculate": "0", "as": "Zero" },
@@ -40,8 +43,8 @@
     {
       "mark": { "type": "rule", "strokeWidth": 2, "opacity": 0.6 },
       "encoding": {
-        "y": { "field": "Category", "type": "nominal", "sort": "-x", "title": null },
-        "x": { "field": "Zero", "type": "quantitative", "axis": { "title": null, "labels": false, "ticks": false } },
+        "y": { "field": "Category", "type": "nominal", "sort": "-x", "axis": null, "title": null },
+        "x": { "field": "Zero", "type": "quantitative", "axis": null },
         "x2": { "field": "ChangePct" },
         "color": { "field": "Direction", "type": "nominal", "legend": null }
       }
@@ -50,7 +53,12 @@
       "mark": { "type": "point", "filled": true, "size": 100 },
       "encoding": {
         "y": { "field": "Category", "type": "nominal", "sort": "-x" },
-        "x": { "field": "ChangePct", "type": "quantitative", "title": "% change (2024 -> 2025)", "axis": { "labelAngle": 0 } },
+        "x": {
+          "field": "ChangePct",
+          "type": "quantitative",
+          "title": "% change (2024 -> 2025)",
+          "axis": { "labelAngle": 0 }
+        },
         "color": { "field": "Direction", "type": "nominal", "legend": { "orient": "bottom" } },
         "tooltip": [
           { "field": "Category" },
@@ -60,20 +68,36 @@
     },
     {
       "transform": [ { "filter": "datum.IsHighestPositive" } ],
-      "mark": { "type": "text", "fontWeight": "bold", "align": "center", "baseline": "top", "dy": 12, "stroke": "white", "strokeWidth": 2 },
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "align": "center",
+        "baseline": "top",
+        "dy": 12,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
       "encoding": {
-        "y": { "field": "Category", "type": "nominal" },
-        "x": { "field": "ChangePct", "type": "quantitative" },
+        "y": { "field": "Category", "type": "nominal", "axis": null },
+        "x": { "field": "ChangePct", "type": "quantitative", "axis": null },
         "text": { "field": "AnnoHighText" },
         "color": { "value": "#0c8c34" }
       }
     },
     {
       "transform": [ { "filter": "datum.IsHighestNegative" } ],
-      "mark": { "type": "text", "fontWeight": "bold", "align": "center", "baseline": "top", "dy": 12, "stroke": "white", "strokeWidth": 2 },
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "align": "center",
+        "baseline": "top",
+        "dy": 12,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
       "encoding": {
-        "y": { "field": "Category", "type": "nominal" },
-        "x": { "field": "ChangePct", "type": "quantitative" },
+        "y": { "field": "Category", "type": "nominal", "axis": null },
+        "x": { "field": "ChangePct", "type": "quantitative", "axis": null },
         "text": { "field": "AnnoLowText" },
         "color": { "value": "#d61c1c" }
       }
@@ -86,6 +110,3 @@
     "view": { "stroke": "#e8e2d8", "cornerRadius": 8 }
   }
 }
-
-
-
