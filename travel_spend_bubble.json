@@ -35,7 +35,7 @@
           "title": null,
           "scale": {
             "domain": ["AvgPerTrip", "AvgPerNight"],
-            "range": ["#9B5DE5", "#F15BB5"]
+            "range": ["#9B5DE5", "#F15BB5"]   
           }
         },
         "tooltip": [
@@ -45,7 +45,6 @@
         ]
       }
     },
-
     {
       "transform": [
         {"filter": "datum.Metric === 'AvgPerTrip'"},
@@ -95,80 +94,6 @@
           {"field": "Metric", "title": "Metric"},
           {"field": "Value", "type": "quantitative", "format": ",.0f"}
         ]
-      }
-    },
-
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerTrip' && datum.Value === 2179"},
-        {"calculate": "datum.Value + 120", "as": "AnnX"}
-      ],
-      "mark": {"type": "rule", "strokeWidth": 2, "opacity": 0.7},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "Value", "type": "quantitative"},
-        "x2": {"field": "AnnX"}
-      }
-    },
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerTrip' && datum.Value === 2179"},
-        {"calculate": "datum.Value + 120", "as": "AnnX"}
-      ],
-      "mark": {"type": "point", "shape": "triangle-right", "filled": true, "size": 80},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "AnnX", "type": "quantitative"},
-        "color": {"value": "#333"}
-      }
-    },
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerTrip' && datum.Value === 2179"},
-        {"calculate": "datum.Value + 135", "as": "LabelX"}
-      ],
-      "mark": {"type": "text", "baseline": "middle", "align": "left", "fontSize": 12, "fontWeight": "bold", "fill": "#333"},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "LabelX", "type": "quantitative"},
-        "text": {"value": "Highest AvgPerTrip"}
-      }
-    },
-
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerNight' && datum.Value === 207"},
-        {"calculate": "datum.Value + 25", "as": "AnnX"}
-      ],
-      "mark": {"type": "rule", "strokeWidth": 2, "opacity": 0.7},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "Value", "type": "quantitative"},
-        "x2": {"field": "AnnX"}
-      }
-    },
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerNight' && datum.Value === 207"},
-        {"calculate": "datum.Value + 25", "as": "AnnX"}
-      ],
-      "mark": {"type": "point", "shape": "triangle-right", "filled": true, "size": 80},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "AnnX", "type": "quantitative"},
-        "color": {"value": "#333"}
-      }
-    },
-    {
-      "transform": [
-        {"filter": "datum.Metric === 'AvgPerNight' && datum.Value === 207"},
-        {"calculate": "datum.Value + 40", "as": "LabelX"}
-      ],
-      "mark": {"type": "text", "baseline": "middle", "align": "left", "fontSize": 12, "fontWeight": "bold", "fill": "#333"},
-      "encoding": {
-        "y": {"field": "Category", "type": "nominal", "sort": "-x"},
-        "x": {"field": "LabelX", "type": "quantitative"},
-        "text": {"value": "Highest AvgPerNight"}
       }
     }
   ],
