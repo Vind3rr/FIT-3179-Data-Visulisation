@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/travel_spend_bubble.csv"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/travel_spend_bubble.csv"
+  },
   "transform": [
     {"filter": "datum.Category !== 'Total'"},
     {"fold": ["AvgPerTrip", "AvgPerNight"], "as": ["Metric", "Value"]},
@@ -35,7 +37,7 @@
           "title": null,
           "scale": {
             "domain": ["AvgPerTrip", "AvgPerNight"],
-            "range": ["#9B5DE5", "#F15BB5"]   
+            "range": ["#9B5DE5", "#F15BB5"]
           }
         },
         "tooltip": [
@@ -48,57 +50,67 @@
 
     {
       "transform": [
-        {"filter": "datum.Metric === 'AvgPerTrip'"},
-        {"calculate": "'$' + format(datum.Value, ',.0f')", "as": "LabelTrip"}
+        {"aggregate": [{"op": "max", "field": "Value", "as": "GlobalMax"}]},
+        {"filter": "datum.Value === datum.GlobalMax"},
+        {"calculate": "'Highest'", "as": "NoteMax"}
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "left",
-        "dx": 6,
-        "fontSize": 11.5,
-        "fontStyle": "italic",
-        "fill": "#333"
+        "dx": 8,
+        "fontSize": 12,
+        "fontWeight": "bold"
       },
       "encoding": {
         "y": {"field": "Category", "type": "nominal", "sort": "-x"},
         "x": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "LabelTrip"},
-        "tooltip": [
-          {"field": "Category"},
-          {"field": "Metric", "title": "Metric"},
-          {"field": "Value", "type": "quantitative", "format": ",.0f"}
-        ]
+        "text": {"field": "NoteMax"},
+        "color": {
+          "field": "Metric",
+          "type": "nominal",
+          "scale": {
+            "domain": ["AvgPerTrip", "AvgPerNight"],
+            "range": ["#9B5DE5", "#F15BB5"]
+          },
+          "legend": null
+        }
       }
     },
 
     {
       "transform": [
-        {"filter": "datum.Metric === 'AvgPerNight'"},
-        {"calculate": "'$' + format(datum.Value, ',.0f')", "as": "LabelNight"}
+        {"aggregate": [{"op": "min", "field": "Value", "as": "GlobalMin"}]},
+        {"filter": "datum.Value === datum.GlobalMin"},
+        {"calculate": "'Lowest'", "as": "NoteMin"}
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "right",
-        "dx": -6,
-        "fontSize": 11.5,
-        "fontStyle": "italic",
-        "fill": "#333"
+        "dx": -8,
+        "fontSize": 12,
+        "fontWeight": "bold"
       },
       "encoding": {
         "y": {"field": "Category", "type": "nominal", "sort": "-x"},
         "x": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "LabelNight"},
-        "tooltip": [
-          {"field": "Category"},
-          {"field": "Metric", "title": "Metric"},
-          {"field": "Value", "type": "quantitative", "format": ",.0f"}
-        ]
+        "text": {"field": "NoteMin"},
+        "color": {
+          "field": "Metric",
+          "type": "nominal",
+          "scale": {
+            "domain": ["AvgPerTrip", "AvgPerNight"],
+            "range": ["#9B5DE5", "#F15BB5"]
+          },
+          "legend": null
+        }
       }
     }
   ],
   "config": {"axis": {"grid": true}}
 }
+
+
 
 
