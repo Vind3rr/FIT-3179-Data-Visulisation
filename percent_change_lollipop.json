@@ -48,15 +48,56 @@
 
     {
       "transform": [
-        {"window": [{"op":"max","field":"ChangePct","as":"GlobalMax"}]},
-        {"filter": "datum.ChangePct === datum.GlobalMax"},
-        {"calculate": "'Highest'", "as": "NoteMax"}
+        {"filter": "datum.ChangePct >= 0"},
+        {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "Label"}
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "left",
-        "dx": 8,
+        "dx": 6,
+        "fontSize": 11.5,
+        "fontStyle": "italic",
+        "fill": "#444"
+      },
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"ChangePct","type":"quantitative"},
+        "text": {"field":"Label"}
+      }
+    },
+
+    {
+      "transform": [
+        {"filter": "datum.ChangePct < 0"},
+        {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "Label"}
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "right",
+        "dx": -6,
+        "fontSize": 11.5,
+        "fontStyle": "italic",
+        "fill": "#444"
+      },
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"ChangePct","type":"quantitative"},
+        "text": {"field":"Label"}
+      }
+    },
+    {
+      "transform": [
+        {"window": [{"op":"max","field":"ChangePct","as":"GlobalMax"}]},
+        {"filter": "datum.ChangePct === datum.GlobalMax"},
+        {"calculate": "'Highest increase'", "as": "NoteMax"}
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "left",
+        "dx": 10,
         "fontSize": 12,
         "fontWeight": "bold"
       },
@@ -72,13 +113,13 @@
       "transform": [
         {"window": [{"op":"min","field":"ChangePct","as":"GlobalMin"}]},
         {"filter": "datum.ChangePct === datum.GlobalMin"},
-        {"calculate": "'Lowest'", "as": "NoteMin"}
+        {"calculate": "'Largest decrease'", "as": "NoteMin"}
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "right",
-        "dx": -8,
+        "dx": -10,
         "fontSize": 12,
         "fontWeight": "bold"
       },
