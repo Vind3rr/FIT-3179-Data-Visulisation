@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/travel_spend_bubble.csv"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/Vind3rr/FIT-3179-Data-Visulisation/main/travel_spend_bubble.csv"
+  },
   "transform": [
     {"filter": "datum.Category !== 'Total'"},
     {"fold": ["AvgPerTrip", "AvgPerNight"], "as": ["Metric", "Value"]},
@@ -103,8 +105,12 @@
     },
     {
       "transform": [
-        {"filter": "datum.Value === datum.MaxVal"},
-        {"calculate": "'Highest'", "as": "NoteMax"}
+        {"window": [{"op": "max", "field": "Value", "as": "MaxPerMetric"}], "groupby": ["Metric"]},
+        {"filter": "datum.Value === datum.MaxPerMetric"},
+        {
+          "calculate": "datum.Metric === 'AvgPerTrip' ? 'Highest Avg/Trip' : 'Highest Avg/Night'",
+          "as": "NoteMax"
+        }
       ],
       "mark": {
         "type": "text",
@@ -131,8 +137,12 @@
     },
     {
       "transform": [
-        {"filter": "datum.Value === datum.MinVal"},
-        {"calculate": "'Lowest'", "as": "NoteMin"}
+        {"window": [{"op": "min", "field": "Value", "as": "MinPerMetric"}], "groupby": ["Metric"]},
+        {"filter": "datum.Value === datum.MinPerMetric"},
+        {
+          "calculate": "datum.Metric === 'AvgPerTrip' ? 'Lowest Avg/Trip' : 'Lowest Avg/Night'",
+          "as": "NoteMin"
+        }
       ],
       "mark": {
         "type": "text",
@@ -160,3 +170,7 @@
   ],
   "config": {"axis": {"grid": true}}
 }
+
+
+
+
