@@ -3,7 +3,7 @@
   "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop).",
   "background": "transparent",
 
-  "width": 900, 
+  "width": 870, 
   "height": 370, 
 
   "data": {
