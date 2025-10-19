@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop) with left/right % labels.",
+  "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop) with left/right % labels and highest change annotations.",
   "background": "transparent",
   "width": 900,
   "height": 400,
@@ -52,42 +52,43 @@
         {"filter": "datum.Direction === 'Increase'"},
         {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "LabelPos"}
       ],
-      "mark": {
-        "type": "text",
-        "baseline": "middle",
-        "align": "left",
-        "dx": 8,
-        "fontSize": 12,
-        "fontStyle": "italic",
-        "fill": "#333",
-        "aria": false
-      },
+      "mark": {"type":"text","baseline":"middle","align":"left","dx":8,"fontSize":12,"fontStyle":"italic","fill":"#333","aria": false},
       "encoding": {
         "y": {"field":"Category","type":"nominal","sort":"-x"},
         "x": {"field":"ChangePct","type":"quantitative"},
         "text": {"field":"LabelPos"}
       }
     },
-
     {
       "transform": [
         {"filter": "datum.Direction === 'Decrease'"},
         {"calculate": "format(datum.ChangePct, '+.1f') + '%'", "as": "LabelNeg"}
       ],
-      "mark": {
-        "type": "text",
-        "baseline": "middle",
-        "align": "right",
-        "dx": -8,
-        "fontSize": 12,
-        "fontStyle": "italic",
-        "fill": "#333",
-        "aria": false
-      },
+      "mark": {"type":"text","baseline":"middle","align":"right","dx":-8,"fontSize":12,"fontStyle":"italic","fill":"#333","aria": false},
       "encoding": {
         "y": {"field":"Category","type":"nominal","sort":"-x"},
         "x": {"field":"ChangePct","type":"quantitative"},
         "text": {"field":"LabelNeg"}
+      }
+    },
+
+    {
+      "transform": [{"filter": "datum.ChangePct === 14.3"}],
+      "mark": {"type": "text", "baseline": "middle", "align": "left", "dx": 80, "fontSize": 12, "fontWeight":"bold", "fill": "#333"},
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"Zero","type":"quantitative"},
+        "text": {"value": "Highest Positive Change"}
+      }
+    },
+
+    {
+      "transform": [{"filter": "datum.ChangePct === -17.3"}],
+      "mark": {"type": "text", "baseline": "middle", "align": "right", "dx": -80, "fontSize": 12, "fontWeight":"bold", "fill": "#333"},
+      "encoding": {
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"Zero","type":"quantitative"},
+        "text": {"value": "Highest Negative Change"}
       }
     }
   ],
