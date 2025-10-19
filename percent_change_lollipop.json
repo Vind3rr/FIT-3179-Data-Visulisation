@@ -2,8 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Aug 2024 -> Aug 2025 percentage change by category (diverging lollipop).",
   "background": "transparent",
-  "width": 900,
-  "height": 400,
+
+  "width": 900, 
+  "height": 400, 
 
   "data": {
     "values": [
@@ -18,95 +19,35 @@
       {"Category":"Short-term visitor departures","ChangePct":13.7}
     ]
   },
-
-  "resolve": {
-    "scale": { "x": "shared", "y": "shared" },
-    "axis":  { "x": "shared", "y": "shared" }
-  },
-
   "transform": [
-    { "calculate": "0", "as": "Zero" },
-    { "calculate": "datum.ChangePct >= 0 ? 'Increase' : 'Decrease'", "as": "Direction" },
-    {
-      "joinaggregate": [
-        { "op": "max", "field": "ChangePct", "as": "MaxChange" },
-        { "op": "min", "field": "ChangePct", "as": "MinChange" }
-      ]
-    },
-    { "calculate": "datum.ChangePct == datum.MaxChange", "as": "IsHighestPositive" },
-    { "calculate": "datum.ChangePct == datum.MinChange", "as": "IsHighestNegative" },
-    { "calculate": "'Highest positive change (' + format(datum.ChangePct,'+.1f') + '%)'", "as": "AnnoHighText" },
-    { "calculate": "'Highest negative change (' + format(datum.ChangePct,'+.1f') + '%)'", "as": "AnnoLowText" }
+    {"calculate": "0", "as": "Zero"},
+    {"calculate": "datum.ChangePct >= 0 ? 'Increase' : 'Decrease'", "as":"Direction"}
   ],
-
   "layer": [
     {
-      "mark": { "type": "rule", "strokeWidth": 2, "opacity": 0.6 },
+      "mark": {"type":"rule", "strokeWidth":2, "opacity":0.6},
       "encoding": {
-        "y": { "field": "Category", "type": "nominal", "sort": "-x", "axis": null, "title": null },
-        "x": { "field": "Zero", "type": "quantitative", "axis": null },
-        "x2": { "field": "ChangePct" },
-        "color": { "field": "Direction", "type": "nominal", "legend": null }
+        "y": {"field":"Category","type":"nominal","sort":"-x","title":null},
+        "x": {"field":"Zero","type":"quantitative"},
+        "x2": {"field":"ChangePct"},
+        "color": {"field":"Direction","type":"nominal","legend": null}
       }
     },
     {
-      "mark": { "type": "point", "filled": true, "size": 100 },
+      "mark": {"type":"point", "filled": true, "size": 100},
       "encoding": {
-        "y": { "field": "Category", "type": "nominal", "sort": "-x" },
-        "x": {
-          "field": "ChangePct",
-          "type": "quantitative",
-          "title": "% change (2024 -> 2025)",
-          "axis": { "labelAngle": 0 }
-        },
-        "color": { "field": "Direction", "type": "nominal", "legend": { "orient": "bottom" } },
+        "y": {"field":"Category","type":"nominal","sort":"-x"},
+        "x": {"field":"ChangePct","type":"quantitative","title":"% change (2024 -> 2025)"},
+        "color": {"field":"Direction","type":"nominal","legend":{"orient":"bottom"}},
         "tooltip": [
-          { "field": "Category" },
-          { "field": "ChangePct", "type": "quantitative", "title": "% change", "format": "+.1f" }
+          {"field":"Category"},
+          {"field":"ChangePct","type":"quantitative","title":"% change","format":"+.1f"}
         ]
-      }
-    },
-    {
-      "transform": [ { "filter": "datum.IsHighestPositive" } ],
-      "mark": {
-        "type": "text",
-        "fontWeight": "bold",
-        "align": "center",
-        "baseline": "top",
-        "dy": 12,
-        "stroke": "white",
-        "strokeWidth": 2
-      },
-      "encoding": {
-        "y": { "field": "Category", "type": "nominal", "axis": null },
-        "x": { "field": "ChangePct", "type": "quantitative", "axis": null },
-        "text": { "field": "AnnoHighText" },
-        "color": { "value": "#0c8c34" }
-      }
-    },
-    {
-      "transform": [ { "filter": "datum.IsHighestNegative" } ],
-      "mark": {
-        "type": "text",
-        "fontWeight": "bold",
-        "align": "center",
-        "baseline": "top",
-        "dy": 12,
-        "stroke": "white",
-        "strokeWidth": 2
-      },
-      "encoding": {
-        "y": { "field": "Category", "type": "nominal", "axis": null },
-        "x": { "field": "ChangePct", "type": "quantitative", "axis": null },
-        "text": { "field": "AnnoLowText" },
-        "color": { "value": "#d61c1c" }
       }
     }
   ],
-
   "config": {
-    "axis": { "grid": true, "tickBand": "extent" },
-    "axisX": { "title": null },
-    "view": { "stroke": "#e8e2d8", "cornerRadius": 8 }
+    "axis": {"grid": true, "tickBand":"extent"},
+    "view": {"stroke": "#e8e2d8", "cornerRadius": 8}
   }
-}
+} 
